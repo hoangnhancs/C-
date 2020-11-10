@@ -1,0 +1,10 @@
+E:\CSharp\10_1_2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+E:\CSharp\10_1_2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+E:\CSharp\10_1_2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+E:\CSharp\10_1_2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+E:\CSharp\10_1_2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+E:\CSharp\10_1_2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+E:\CSharp\10_1_2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+E:\CSharp\10_1_2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+E:\CSharp\10_1_2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+E:\CSharp\10_1_2\WindowsFormsApp2\obj\Debug\Calculator.Form1.resources
