@@ -1,0 +1,10 @@
+E:\CSharp\ProjectCSharp\ProjectCSharp\obj\Debug\ProjectCSharp.csprojAssemblyReference.cache
+E:\CSharp\ProjectCSharp\ProjectCSharp\obj\Debug\ProjectCSharp.Form1.resources
+E:\CSharp\ProjectCSharp\ProjectCSharp\obj\Debug\ProjectCSharp.Properties.Resources.resources
+E:\CSharp\ProjectCSharp\ProjectCSharp\obj\Debug\ProjectCSharp.csproj.GenerateResource.cache
+E:\CSharp\ProjectCSharp\ProjectCSharp\obj\Debug\ProjectCSharp.csproj.CoreCompileInputs.cache
+E:\CSharp\ProjectCSharp\ProjectCSharp\bin\Debug\ProjectCSharp.exe.config
+E:\CSharp\ProjectCSharp\ProjectCSharp\bin\Debug\ProjectCSharp.exe
+E:\CSharp\ProjectCSharp\ProjectCSharp\bin\Debug\ProjectCSharp.pdb
+E:\CSharp\ProjectCSharp\ProjectCSharp\obj\Debug\ProjectCSharp.exe
+E:\CSharp\ProjectCSharp\ProjectCSharp\obj\Debug\ProjectCSharp.pdb
