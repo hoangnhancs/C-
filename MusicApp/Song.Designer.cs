@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Song));
             this.panel_inforSong = new System.Windows.Forms.Panel();
             this.panel_textSong = new System.Windows.Forms.Panel();
+            this.panel_scriptSong = new System.Windows.Forms.Panel();
+            this.textBox_sriptSong = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label_singers = new System.Windows.Forms.Label();
             this.label_nameSong = new System.Windows.Forms.Label();
@@ -44,27 +46,25 @@
             this.label_detail = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_fullLyric = new System.Windows.Forms.Panel();
-            this.panel_lyricSong = new System.Windows.Forms.Panel();
-            this.textBox_lyric = new System.Windows.Forms.TextBox();
             this.panel_relateSong = new System.Windows.Forms.Panel();
-            this.panel_spaceLyric = new System.Windows.Forms.Panel();
             this.panel_titleRelateSong = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel_scriptSong = new System.Windows.Forms.Panel();
-            this.textBox_sriptSong = new System.Windows.Forms.TextBox();
+            this.panel_spaceLyric = new System.Windows.Forms.Panel();
+            this.panel_lyricSong = new System.Windows.Forms.Panel();
+            this.textBox_lyric = new System.Windows.Forms.TextBox();
             this.panel_inforSong.SuspendLayout();
             this.panel_textSong.SuspendLayout();
+            this.panel_scriptSong.SuspendLayout();
             this.panel_pictureSong.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_miniLyricSong.SuspendLayout();
             this.panel_fullLyric.SuspendLayout();
-            this.panel_lyricSong.SuspendLayout();
             this.panel_relateSong.SuspendLayout();
             this.panel_titleRelateSong.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel_scriptSong.SuspendLayout();
+            this.panel_lyricSong.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_inforSong
@@ -90,6 +90,29 @@
             this.panel_textSong.Name = "panel_textSong";
             this.panel_textSong.Size = new System.Drawing.Size(482, 305);
             this.panel_textSong.TabIndex = 2;
+            // 
+            // panel_scriptSong
+            // 
+            this.panel_scriptSong.Controls.Add(this.textBox_sriptSong);
+            this.panel_scriptSong.Location = new System.Drawing.Point(47, 139);
+            this.panel_scriptSong.Name = "panel_scriptSong";
+            this.panel_scriptSong.Size = new System.Drawing.Size(401, 149);
+            this.panel_scriptSong.TabIndex = 5;
+            // 
+            // textBox_sriptSong
+            // 
+            this.textBox_sriptSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.textBox_sriptSong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_sriptSong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_sriptSong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_sriptSong.ForeColor = System.Drawing.Color.White;
+            this.textBox_sriptSong.Location = new System.Drawing.Point(0, 0);
+            this.textBox_sriptSong.Multiline = true;
+            this.textBox_sriptSong.Name = "textBox_sriptSong";
+            this.textBox_sriptSong.ReadOnly = true;
+            this.textBox_sriptSong.Size = new System.Drawing.Size(401, 149);
+            this.textBox_sriptSong.TabIndex = 3;
+            this.textBox_sriptSong.Text = "Ca khúc Bandido do ca sĩ Myke TowersJuhn, thể hiện, thuộc thể loại Latin. ";
             // 
             // label1
             // 
@@ -220,33 +243,6 @@
             this.panel_fullLyric.Size = new System.Drawing.Size(751, 587);
             this.panel_fullLyric.TabIndex = 4;
             // 
-            // panel_lyricSong
-            // 
-            this.panel_lyricSong.AutoScroll = true;
-            this.panel_lyricSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.panel_lyricSong.Controls.Add(this.textBox_lyric);
-            this.panel_lyricSong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_lyricSong.Location = new System.Drawing.Point(0, 68);
-            this.panel_lyricSong.Name = "panel_lyricSong";
-            this.panel_lyricSong.Size = new System.Drawing.Size(751, 256);
-            this.panel_lyricSong.TabIndex = 3;
-            this.panel_lyricSong.Visible = false;
-            // 
-            // textBox_lyric
-            // 
-            this.textBox_lyric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.textBox_lyric.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_lyric.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_lyric.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_lyric.ForeColor = System.Drawing.Color.White;
-            this.textBox_lyric.Location = new System.Drawing.Point(0, 0);
-            this.textBox_lyric.Multiline = true;
-            this.textBox_lyric.Name = "textBox_lyric";
-            this.textBox_lyric.ReadOnly = true;
-            this.textBox_lyric.Size = new System.Drawing.Size(751, 256);
-            this.textBox_lyric.TabIndex = 3;
-            this.textBox_lyric.Text = "Hiện không có lời bài hát này";
-            // 
             // panel_relateSong
             // 
             this.panel_relateSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
@@ -257,15 +253,6 @@
             this.panel_relateSong.Name = "panel_relateSong";
             this.panel_relateSong.Size = new System.Drawing.Size(751, 263);
             this.panel_relateSong.TabIndex = 4;
-            // 
-            // panel_spaceLyric
-            // 
-            this.panel_spaceLyric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
-            this.panel_spaceLyric.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_spaceLyric.Location = new System.Drawing.Point(0, 0);
-            this.panel_spaceLyric.Name = "panel_spaceLyric";
-            this.panel_spaceLyric.Size = new System.Drawing.Size(751, 33);
-            this.panel_spaceLyric.TabIndex = 0;
             // 
             // panel_titleRelateSong
             // 
@@ -298,28 +285,41 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Có thể bạn quan tâm :";
             // 
-            // panel_scriptSong
+            // panel_spaceLyric
             // 
-            this.panel_scriptSong.Controls.Add(this.textBox_sriptSong);
-            this.panel_scriptSong.Location = new System.Drawing.Point(47, 139);
-            this.panel_scriptSong.Name = "panel_scriptSong";
-            this.panel_scriptSong.Size = new System.Drawing.Size(401, 149);
-            this.panel_scriptSong.TabIndex = 5;
+            this.panel_spaceLyric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.panel_spaceLyric.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_spaceLyric.Location = new System.Drawing.Point(0, 0);
+            this.panel_spaceLyric.Name = "panel_spaceLyric";
+            this.panel_spaceLyric.Size = new System.Drawing.Size(751, 33);
+            this.panel_spaceLyric.TabIndex = 0;
             // 
-            // textBox_sriptSong
+            // panel_lyricSong
             // 
-            this.textBox_sriptSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
-            this.textBox_sriptSong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_sriptSong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_sriptSong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_sriptSong.ForeColor = System.Drawing.Color.White;
-            this.textBox_sriptSong.Location = new System.Drawing.Point(0, 0);
-            this.textBox_sriptSong.Multiline = true;
-            this.textBox_sriptSong.Name = "textBox_sriptSong";
-            this.textBox_sriptSong.ReadOnly = true;
-            this.textBox_sriptSong.Size = new System.Drawing.Size(401, 149);
-            this.textBox_sriptSong.TabIndex = 3;
-            this.textBox_sriptSong.Text = "Ca khúc Bandido do ca sĩ Myke TowersJuhn, thể hiện, thuộc thể loại Latin. ";
+            this.panel_lyricSong.AutoScroll = true;
+            this.panel_lyricSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.panel_lyricSong.Controls.Add(this.textBox_lyric);
+            this.panel_lyricSong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_lyricSong.Location = new System.Drawing.Point(0, 68);
+            this.panel_lyricSong.Name = "panel_lyricSong";
+            this.panel_lyricSong.Size = new System.Drawing.Size(751, 256);
+            this.panel_lyricSong.TabIndex = 3;
+            this.panel_lyricSong.Visible = false;
+            // 
+            // textBox_lyric
+            // 
+            this.textBox_lyric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.textBox_lyric.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_lyric.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_lyric.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_lyric.ForeColor = System.Drawing.Color.White;
+            this.textBox_lyric.Location = new System.Drawing.Point(0, 0);
+            this.textBox_lyric.Multiline = true;
+            this.textBox_lyric.Name = "textBox_lyric";
+            this.textBox_lyric.ReadOnly = true;
+            this.textBox_lyric.Size = new System.Drawing.Size(751, 256);
+            this.textBox_lyric.TabIndex = 3;
+            this.textBox_lyric.Text = "Hiện không có lời bài hát này";
             // 
             // Song
             // 
@@ -335,20 +335,20 @@
             this.panel_inforSong.ResumeLayout(false);
             this.panel_textSong.ResumeLayout(false);
             this.panel_textSong.PerformLayout();
+            this.panel_scriptSong.ResumeLayout(false);
+            this.panel_scriptSong.PerformLayout();
             this.panel_pictureSong.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_miniLyricSong.ResumeLayout(false);
             this.panel_miniLyricSong.PerformLayout();
             this.panel_fullLyric.ResumeLayout(false);
-            this.panel_lyricSong.ResumeLayout(false);
-            this.panel_lyricSong.PerformLayout();
             this.panel_relateSong.ResumeLayout(false);
             this.panel_titleRelateSong.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel_scriptSong.ResumeLayout(false);
-            this.panel_scriptSong.PerformLayout();
+            this.panel_lyricSong.ResumeLayout(false);
+            this.panel_lyricSong.PerformLayout();
             this.ResumeLayout(false);
 
         }
