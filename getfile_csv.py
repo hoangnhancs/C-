@@ -2,6 +2,7 @@
 from os import listdir
 from os.path import isfile, join
 from tinytag import TinyTag as T
+from pandas import DataFrame
 """
 folder = str("E:\\Song\\Nghe gì hôm nay")
 
@@ -37,7 +38,7 @@ lyrics_path = []
 images_path = []
 album = []
 
-from pandas import DataFrame
+
 
 for _ in listdir(folder):
     mypath = folder + "\\" +  _
@@ -81,7 +82,7 @@ export_csv = df.to_csv (r'E:\hoangnhancs\C-\song_infor.csv', index = None, heade
 print (df)
 """
 
-
+"""
 
 _id = []
 song_path = []
@@ -134,6 +135,61 @@ C = {'ID': _id,
 df = DataFrame(C, columns= ['ID', 'Song path', 'Lyrics path', 'Images path', 'Name', 'Singer', 'Album'])
 export_csv = df.to_csv (r'E:\hoangnhancs\C-\moi_phat_hanh_infor.csv', index = None, header=True, encoding="utf-8") # here you have to write path, where result file will be stored
 print (df)
+
+"""
+_id = []
+video_path = []
+singer = []
+name = []
+i = 0
+videos_folder = "E:\\Videos\\Videos"
+for f in listdir(videos_folder):
+    if isfile(join(videos_folder, f)):
+        i += 1
+        #print(join(videos_folder, f))
+        path = join(videos_folder, f)
+        _id.append(i)
+        video_path.append(path)
+        #audio = T.get(video_path[-1])
+        name.append(path.split("\\")[-1].split(".mp4")[0])
+        #print(path.split("\\"))
+        #singer.append(audio.artist)
+
+#E:\Videos\Images of video
+img_video_path = []
+img_videos_folder = "E:\\Videos\\Images of video"
+for f in listdir(img_videos_folder):
+    if isfile(join(img_videos_folder, f)):
+        
+        #print(join(videos_folder, f))
+        path = join(img_videos_folder, f)
+        #_id.append(i)
+        #video_path.append(path)
+        #audio = T.get(video_path[-1])
+        img_video_path.append(path)
+        #print(path.split("\\"))
+        #singer.append(audio.artist)
+
+#print(_id)
+#print(name)
+#print(name)
+#print(singer)
+
+C = {'ID': _id,
+    'Video path': video_path,
+    #'Lyrics path': lyrics_path,
+    'Image path': img_video_path,
+    'Name': name,
+    #'Singer': singer,
+    #'Album' : album,
+    }
+
+df = DataFrame(C, columns= ['ID', 'Video path','Image path', 'Name'])
+export_csv = df.to_csv (r'E:\\hoangnhancs\\C-\\video_infor.csv', index = None, header=True, encoding="utf-8") # here you have to write path, where result file will be stored
+print (df)
+
+for i in range(len(_id)):
+    print("(N'"+video_path[i]+"',N'"+img_video_path[i]+"',N'"+name[i]+"')")
 
 
 

@@ -197,3 +197,38 @@ select * from song where song.name_playlist = N'Giải trí'
 
 --Lưu ý các đường dẫn nếu không load được file nhạc, lyric hay hình ảnh
 
+create table video
+(
+	id int identity (1,1) primary key,
+	video_path nvarchar(300) not null,
+	--lyric_path nvarchar(300) not null,
+	image_path nvarchar(300) not null,
+	name nvarchar(100) not null,
+	singer nvarchar(100),
+	--name_album nvarchar(200),
+	--id_album int,
+	--name_playlist nvarchar(200),
+	--id_playlist int,
+	song_type nvarchar(100),
+	song_type_id int,	
+)
+
+insert into dbo.video (video_path, image_path, name, singer, song_type, song_type_id)
+values 
+(N'E:\Videos\Videos\(Karaoke) Đi về nhà - Đen & Justatee - Beat Chuẩn.mp4',N'E:\Videos\Images of video\(Karaoke) Đi về nhà - Đen & Justatee - Beat Chuẩn.jpg',N'(Karaoke) Đi về nhà - Đen & Justatee - Beat Chuẩn',N'Đen & Justatee', N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\Con Cò Bé Bé Karaoke Nhạc Thiếu Nhi Hay - Karaoke Con Cò Bé Bé.mp4',N'E:\Videos\Images of video\Con Cò Bé Bé Karaoke Nhạc Thiếu Nhi Hay - Karaoke Con Cò Bé Bé.jpg',N'Con Cò Bé Bé Karaoke Nhạc Thiếu Nhi Hay - Karaoke Con Cò Bé Bé', N'Xuân Mai',N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\Happy New Year - Abba - Karaoke.mp4',N'E:\Videos\Images of video\Happy New Year - Abba - Karaoke.jpg',N'Happy New Year - Abba - Karaoke', N'Abba', N'Nhạc nước ngoài', 1),
+(N'E:\Videos\Videos\Karaoke - CỐ GIANG TÌNH - New Rap (Ballad Version) - Phát Hồ x JokeS Bii.mp4',N'E:\Videos\Images of video\Karaoke - CỐ GIANG TÌNH - New Rap (Ballad Version) - Phát Hồ x JokeS Bii.jpg',N'Karaoke - CỐ GIANG TÌNH - New Rap (Ballad Version) - Phát Hồ x JokeS Bii', N'Phát Hồ x JokeS Bii', N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\Karaoke - Trúc Xinh (Ciray Remix) - Minh Vương M4U ft. Việt - Beat Remix.mp4',N'E:\Videos\Images of video\Karaoke - Trúc Xinh (Ciray Remix) - Minh Vương M4U ft. Việt - Beat Remix.jpg',N'Karaoke - Trúc Xinh (Ciray Remix) - Minh Vương M4U ft. Việt - Beat Remix',N'Minh Vương M4U ft. Việt', N'Nhạc remix', 3),
+(N'E:\Videos\Videos\KARAOKE - Vợ Ơi - Lê Bảo Bình.mp4',N'E:\Videos\Images of video\KARAOKE - Vợ Ơi - Lê Bảo Bình.jpg',N'KARAOKE - Vợ Ơi - Lê Bảo Bình', N'Lê Bảo Bình',N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\Karaoke Anh Từng Cố Gắng - Nhật Phong (Beat Gốc).mp4',N'E:\Videos\Images of video\Karaoke Anh Từng Cố Gắng - Nhật Phong (Beat Gốc).jpg',N'Karaoke Anh Từng Cố Gắng - Nhật Phong (Beat Gốc)', N'Nhật Phong', N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\Karaoke Thế thái _ X2X (New Version) _ Có rap.mp4',N'E:\Videos\Images of video\Karaoke Thế thái _ X2X (New Version) _ Có rap.jpg',N'Karaoke Thế thái _ X2X (New Version) _ Có rap', N'X2X', N'Nhạc remix', 3),
+(N'E:\Videos\Videos\Shape of You - Ed Sheeran Karaoke .mp4',N'E:\Videos\Images of video\Shape of You - Ed Sheeran Karaoke.jpg',N'Shape of You - Ed Sheeran Karaoke ', N'Ed Sheen', N'Nhạc nước ngoài', 1),
+(N'E:\Videos\Videos\Something Just Like This - The Chainsmokers & Coldplay Karaoke.mp4',N'E:\Videos\Images of video\Something Just Like This - The Chainsmokers & Coldplay Karaoke.jpg',N'Something Just Like This - The Chainsmokers & Coldplay Karaoke', N'The Chainsmokers & Coldplay',N'Nhạc nước ngoài', 1 ),
+(N'E:\Videos\Videos\SÓNG GIÓ KARAOKE - JACK x K-ICM [Official Video].mp4',N'E:\Videos\Images of video\SÓNG GIÓ KARAOKE - JACK x K-ICM [Official Video].jpg',N'SÓNG GIÓ KARAOKE - JACK x K-ICM [Official Video]', N'JACK x K-ICM', N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\[ Karaoke Remix ] Em Băng Qua - Lập Nguyên (T-Epic Remix) - Deep House.mp4',N'E:\Videos\Images of video\[ Karaoke Remix ] Em Băng Qua - Lập Nguyên (T-Epic Remix) - Deep House.jpg',N'[ Karaoke Remix ] Em Băng Qua - Lập Nguyên (T-Epic Remix) - Deep House', N'Lập Nguyên', N'Nhạc remix', 3),
+(N'E:\Videos\Videos\[KARAOKE BEAT] AI MANG CÔ ĐƠN ĐI - K-ICM FT. APJ - ICM STUDIO.mp4',N'E:\Videos\Images of video\[KARAOKE BEAT] AI MANG CÔ ĐƠN ĐI - K-ICM FT. APJ - ICM STUDIO.jpg',N'[KARAOKE BEAT] AI MANG CÔ ĐƠN ĐI - K-ICM FT. APJ - ICM STUDIO', N'K-ICM FT. APJ - ICM STUDIO', N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\[Karaoke-Beat] Níu Duyên - Lê Bảo Bình - Tone Nữ.mp4',N'E:\Videos\Images of video\[Karaoke-Beat] Níu Duyên - Lê Bảo Bình - Tone Nữ.jpg',N'[Karaoke-Beat] Níu Duyên - Lê Bảo Bình - Tone Nữ', N'Lê Bảo Bình',  N'Nhạc trẻ', 2),
+(N'E:\Videos\Videos\[Karaoke] Tình Sầu Thiên Thu Muôn Lối - Doãn Hiếu l Beat Chuẩn Không Bè.mp4',N'E:\Videos\Images of video\[Karaoke] Tình Sầu Thiên Thu Muôn Lối - Doãn Hiếu l Beat Chuẩn Không Bè.jpg',N'[Karaoke] Tình Sầu Thiên Thu Muôn Lối - Doãn Hiếu l Beat Chuẩn Không Bè', N'Doãn Hiếu', N'Nhạc remix', 3)
+
+
