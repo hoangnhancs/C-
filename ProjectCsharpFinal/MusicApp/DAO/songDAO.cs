@@ -70,6 +70,9 @@ namespace MusicApp.DAO
             return lstsong;
 
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
     }
 }

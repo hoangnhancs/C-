@@ -62,8 +62,15 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.panel_behindList1 = new System.Windows.Forms.Panel();
             this.pictureBox_item1 = new System.Windows.Forms.PictureBox();
+=======
+            this.panel_item_1_1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel_item_1_2 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
             this.panel_menuBar.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.panel_title.SuspendLayout();
@@ -89,10 +96,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+<<<<<<< HEAD
             this.panel_behindList1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_item1)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_item_1_2.SuspendLayout();
+            this.panel13.SuspendLayout();
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
             this.SuspendLayout();
             // 
             // panel_menuBar
@@ -205,13 +217,15 @@
             // panel_MoiVsHot
             // 
             this.panel_MoiVsHot.AutoScroll = true;
+            this.panel_MoiVsHot.Controls.Add(this.panel13);
+            this.panel_MoiVsHot.Controls.Add(this.panel_item_1_2);
             this.panel_MoiVsHot.Controls.Add(this.panel6);
             this.panel_MoiVsHot.Controls.Add(this.panel3);
             this.panel_MoiVsHot.Controls.Add(this.panel4);
             this.panel_MoiVsHot.Controls.Add(this.panel5);
             this.panel_MoiVsHot.Controls.Add(this.panel2);
             this.panel_MoiVsHot.Controls.Add(this.panel1);
-            this.panel_MoiVsHot.Controls.Add(this.panel_behindList1);
+            this.panel_MoiVsHot.Controls.Add(this.panel_item_1_1);
             this.panel_MoiVsHot.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_MoiVsHot.Location = new System.Drawing.Point(0, 0);
             this.panel_MoiVsHot.Name = "panel_MoiVsHot";
@@ -437,7 +451,6 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(288, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 206);
@@ -446,15 +459,16 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(87, 81);
+            this.pictureBox2.Location = new System.Drawing.Point(99, 81);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(49, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // panel_behindList1
+            // panel_item_1_1
             // 
+<<<<<<< HEAD
             this.panel_behindList1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_behindList1.BackgroundImage")));
             this.panel_behindList1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_behindList1.Controls.Add(this.pictureBox_item1);
@@ -479,6 +493,50 @@
             this.pictureBox_item1.Click += new System.EventHandler(this.pictureBox_item1_Click);
             this.pictureBox_item1.MouseLeave += new System.EventHandler(this.pictureBox_item1_MouseLeave);
             this.pictureBox_item1.MouseHover += new System.EventHandler(this.pictureBox_item1_MouseHover);
+=======
+            this.panel_item_1_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_item_1_1.BackgroundImage")));
+            this.panel_item_1_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_item_1_1.Location = new System.Drawing.Point(36, 59);
+            this.panel_item_1_1.Name = "panel_item_1_1";
+            this.panel_item_1_1.Size = new System.Drawing.Size(222, 206);
+            this.panel_item_1_1.TabIndex = 0;
+            this.panel_item_1_1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_behindList1_Paint);
+            this.panel_item_1_1.MouseHover += new System.EventHandler(this.panel_item_1_1_MouseHover);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(103, 81);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
+            // 
+            // panel_item_1_2
+            // 
+            this.panel_item_1_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_item_1_2.BackgroundImage")));
+            this.panel_item_1_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_item_1_2.Controls.Add(this.pictureBox1);
+            this.panel_item_1_2.Location = new System.Drawing.Point(25, 59);
+            this.panel_item_1_2.Name = "panel_item_1_2";
+            this.panel_item_1_2.Size = new System.Drawing.Size(248, 219);
+            this.panel_item_1_2.TabIndex = 1;
+            this.panel_item_1_2.Visible = false;
+            this.panel_item_1_2.MouseLeave += new System.EventHandler(this.panel_item_1_2_MouseLeave);
+            // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel13.Controls.Add(this.pictureBox2);
+            this.panel13.Location = new System.Drawing.Point(276, 59);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(248, 219);
+            this.panel13.TabIndex = 9;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
+            this.panel13.MouseLeave += new System.EventHandler(this.panel13_MouseLeave);
             // 
             // discover_songs
             // 
@@ -519,10 +577,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+<<<<<<< HEAD
             this.panel_behindList1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_item1)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_item_1_2.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
             this.ResumeLayout(false);
 
         }
@@ -541,8 +604,13 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel_behindList1;
         private System.Windows.Forms.PictureBox pictureBox_item1;
+=======
+        private System.Windows.Forms.Panel panel_item_1_1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -564,5 +632,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel_title;
         private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.Panel panel_item_1_2;
+        private System.Windows.Forms.Panel panel13;
     }
 }

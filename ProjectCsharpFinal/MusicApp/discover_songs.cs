@@ -46,6 +46,7 @@ namespace MusicApp
 
         }
 
+<<<<<<< HEAD
         private void panel_behindList1_MouseHover(object sender, EventArgs e)
         {
             pictureBox_item1.Visible = true;
@@ -67,6 +68,24 @@ namespace MusicApp
         }
 
         private void pictureBox_item1_Click(object sender, EventArgs e)
+=======
+        private void panel_item_1_1_MouseHover(object sender, EventArgs e)
+        {
+            panel_item_1_2.Visible = true;
+        }
+
+        private void panel_item_1_2_MouseLeave(object sender, EventArgs e)
+        {
+            panel_item_1_2.Visible = false;
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel13_MouseLeave(object sender, EventArgs e)
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
         {
 
         }

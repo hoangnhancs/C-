@@ -7336,4 +7336,10 @@
         j5gBAxry8YgZMKBB7wbs0+l0+Sx+CdCITz75f4VJ8gz7j4R8AAAAAElFTkSuQmCC
 </value>
   </data>
+<<<<<<< HEAD
+=======
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+>>>>>>> 0390169e2ab113e00b9bada56efac2b518eb50d0
 </root>
