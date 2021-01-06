@@ -24,7 +24,6 @@ namespace MusicApp
             button_AsianSongs.FlatAppearance.BorderSize = 0;
             button_differentSongs.FlatAppearance.BorderSize = 0;
             button_VNSongs.FlatAppearance.BorderSize = 0;
-            button_newSongs.FlatAppearance.BorderSize = 0;
         }
 
         //private Form activeForm = null;

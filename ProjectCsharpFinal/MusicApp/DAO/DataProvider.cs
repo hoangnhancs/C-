@@ -20,7 +20,7 @@ namespace MusicApp.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = @"Data Source=DESKTOP-SVOS4R1\SQLEXPRESSSSS;Initial Catalog=nghegihomnay;Integrated Security=True";
+        private string connectionSTR = @"Data Source=DESKTOP-RAOQ9CO\SQLEXPRESS;Initial Catalog=nghegihomnay;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

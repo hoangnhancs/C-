@@ -12,9 +12,16 @@ namespace MusicApp
 {
     public partial class MusicApp : Form
     {
+        string path;
         public MusicApp()
         {
             InitializeComponent();
+            path = homePage.SongNowPlaying;
+        }
+
+        public void load()
+        {
+            label_nameSong.Text = path;
         }
         // biến lưu giữ trạng thái của main panel
 
@@ -85,6 +92,10 @@ namespace MusicApp
             //karaoke
             button_recorded.FlatAppearance.BorderSize = 0;
             button_recording.FlatAppearance.BorderSize = 0;
+
+            // load form vào panel main
+            Form homePage = new homePage();
+            openChildForm(homePage);
         }
 
         private void panel_MenuBar_Paint(object sender, PaintEventArgs e)
@@ -275,6 +286,11 @@ namespace MusicApp
 
             Form karaoke = new Karaoke();
             openChildForm(karaoke, true);
+        }
+
+        private void pictureBox_pictureSong_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
