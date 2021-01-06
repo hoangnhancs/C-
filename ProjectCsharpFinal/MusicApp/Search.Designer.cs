@@ -117,6 +117,7 @@
             this.textBox_titleSong.Name = "textBox_titleSong";
             this.textBox_titleSong.Size = new System.Drawing.Size(639, 35);
             this.textBox_titleSong.TabIndex = 8;
+            this.textBox_titleSong.TextChanged += new System.EventHandler(this.textBox_titleSong_TextChanged);
             // 
             // panel_mainSearch
             // 
@@ -469,6 +470,9 @@
             this.button_album.TabIndex = 6;
             this.button_album.Text = "Album";
             this.button_album.UseVisualStyleBackColor = false;
+
+            this.button_album.Click += new System.EventHandler(this.button_album_Click);
+
             // 
             // button_song
             // 
@@ -482,6 +486,9 @@
             this.button_song.TabIndex = 5;
             this.button_song.Text = "Bài hát";
             this.button_song.UseVisualStyleBackColor = false;
+
+            this.button_song.Click += new System.EventHandler(this.button_song_Click);
+
             // 
             // button_all
             // 
@@ -495,6 +502,9 @@
             this.button_all.TabIndex = 4;
             this.button_all.Text = "Tất cả";
             this.button_all.UseVisualStyleBackColor = false;
+
+            this.button_all.Click += new System.EventHandler(this.button_all_Click);
+
             // 
             // panel1
             // 
