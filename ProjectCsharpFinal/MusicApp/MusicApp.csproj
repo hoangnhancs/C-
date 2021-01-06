@@ -58,8 +58,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DAO\songDAO.cs" />
     <Compile Include="discover_album.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,7 +82,6 @@
     <Compile Include="discover_songs.Designer.cs">
       <DependentUpon>discover_songs.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\song.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,9 +262,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="recorded\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
