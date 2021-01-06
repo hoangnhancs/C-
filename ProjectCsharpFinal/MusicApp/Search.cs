@@ -70,7 +70,13 @@ namespace MusicApp
             {
                 pn.Visible = false;
             }
+<<<<<<< HEAD
             
+=======
+
+
+            string query = textBox_titleSong.Text;
+>>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
             List<song> lstsong = new List<song>();
             lstsong = songDAO.Instance.getsongbyquery(query);
 

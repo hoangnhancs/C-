@@ -470,7 +470,10 @@
             this.button_album.TabIndex = 6;
             this.button_album.Text = "Album";
             this.button_album.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.button_album.Click += new System.EventHandler(this.button_album_Click);
+=======
+>>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
             // 
             // button_song
             // 
@@ -484,7 +487,10 @@
             this.button_song.TabIndex = 5;
             this.button_song.Text = "Bài hát";
             this.button_song.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.button_song.Click += new System.EventHandler(this.button_song_Click);
+=======
+>>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
             // 
             // button_all
             // 
@@ -498,7 +504,10 @@
             this.button_all.TabIndex = 4;
             this.button_all.Text = "Tất cả";
             this.button_all.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.button_all.Click += new System.EventHandler(this.button_all_Click);
+=======
+>>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
             // 
             // panel1
             // 

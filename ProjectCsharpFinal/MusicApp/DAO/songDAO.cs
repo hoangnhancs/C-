@@ -54,6 +54,25 @@ namespace MusicApp.DAO
 
         }
 
+<<<<<<< HEAD
        
+=======
+        public List<song> getsongbyCategory(string cat)
+        {
+            List<song> lstsong = new List<song>();
+
+            string query_database = "select * from dbo.song where song_type = N'" + cat + "'";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query_database);
+            //Console.WriteLine(data);
+            foreach (DataRow item in data.Rows)
+            {
+                song _song = new song(item);
+                lstsong.Add(_song);
+            }
+
+            return lstsong;
+
+        }
+>>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
     }
 }

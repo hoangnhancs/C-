@@ -62,8 +62,6 @@ D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\AxInterop.MOVIEP
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\Interop.MOVIEPLAYERLib.dll
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\AxInterop.MOVIEPLAYERLib.dll
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.ResolveComReference.cache
-D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Newtonsoft.Json.dll
-D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YoutubeExtractor.dll
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Newtonsoft.Json.xml
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YoutubeExtractor.xml
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.CopyComplete
@@ -73,8 +71,6 @@ D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Interop.Shockwav
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Karaoke_record.resources
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Karaoke_search.resources
-D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\taglib-sharp.dll
-D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YouTubeSearch.dll
 =======
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\MusicApp.exe.config
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\MusicApp.exe
@@ -113,3 +109,7 @@ E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Login.resources
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Recorded.resources
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.SignUp.resources
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.CopyComplete
+D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Interop.WMPLib.dll
+D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\AxInterop.WMPLib.dll
+D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\Interop.WMPLib.dll
+D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\AxInterop.WMPLib.dll

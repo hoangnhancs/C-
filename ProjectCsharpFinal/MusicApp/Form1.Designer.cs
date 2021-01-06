@@ -64,6 +64,7 @@
             this.button_addPlaylist = new System.Windows.Forms.Button();
             this.panel_Song = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label_authorSong = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox_pictureSong = new System.Windows.Forms.PictureBox();
@@ -91,7 +92,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel_space1 = new System.Windows.Forms.Panel();
             this.panel_space2 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel_MenuBar.SuspendLayout();
             this.panel_karaoke.SuspendLayout();
             this.panel_Music.SuspendLayout();
@@ -109,12 +110,14 @@
             this.panel_moreToolButton.SuspendLayout();
             this.panel_Song.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pictureSong)).BeginInit();
             this.panel_playlistButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_moreToolButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playlistButton)).BeginInit();
+            this.panel_timePlayer.SuspendLayout();
             this.panel_buttonPlayer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,7 +127,7 @@
             this.panel_Main.SuspendLayout();
             this.panel_logined.SuspendLayout();
             this.panel_groupLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_MenuBar
@@ -535,7 +538,7 @@
             this.panel_listSong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_listSong.Location = new System.Drawing.Point(0, 315);
             this.panel_listSong.Name = "panel_listSong";
-            this.panel_listSong.Size = new System.Drawing.Size(297, 196);
+            this.panel_listSong.Size = new System.Drawing.Size(297, 226);
             this.panel_listSong.TabIndex = 4;
             // 
             // panel_moreToolButton
@@ -619,6 +622,17 @@
             this.panel2.Size = new System.Drawing.Size(266, 294);
             this.panel2.TabIndex = 0;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(225, 259);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 27);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
+            // 
             // label_authorSong
             // 
             this.label_authorSong.AutoSize = true;
@@ -648,6 +662,7 @@
             this.pictureBox_pictureSong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_pictureSong.TabIndex = 0;
             this.pictureBox_pictureSong.TabStop = false;
+            this.pictureBox_pictureSong.Click += new System.EventHandler(this.pictureBox_pictureSong_Click);
             // 
             // label_nameSong
             // 
@@ -667,7 +682,7 @@
             this.panel_playlistButton.Controls.Add(this.label_playlistButton);
             this.panel_playlistButton.Controls.Add(this.pictureBox_playlistButton);
             this.panel_playlistButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_playlistButton.Location = new System.Drawing.Point(0, 511);
+            this.panel_playlistButton.Location = new System.Drawing.Point(0, 541);
             this.panel_playlistButton.Name = "panel_playlistButton";
             this.panel_playlistButton.Size = new System.Drawing.Size(297, 71);
             this.panel_playlistButton.TabIndex = 3;
@@ -717,10 +732,11 @@
             // 
             // panel_timePlayer
             // 
+            this.panel_timePlayer.Controls.Add(this.axWindowsMediaPlayer1);
             this.panel_timePlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_timePlayer.Location = new System.Drawing.Point(0, 582);
+            this.panel_timePlayer.Location = new System.Drawing.Point(0, 612);
             this.panel_timePlayer.Name = "panel_timePlayer";
-            this.panel_timePlayer.Size = new System.Drawing.Size(297, 45);
+            this.panel_timePlayer.Size = new System.Drawing.Size(297, 15);
             this.panel_timePlayer.TabIndex = 2;
             // 
             // panel_buttonPlayer
@@ -800,7 +816,6 @@
             // 
             // panel_Main
             // 
-            this.panel_Main.AutoScroll = true;
             this.panel_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
             this.panel_Main.Controls.Add(this.panel_logined);
             this.panel_Main.Controls.Add(this.panel_groupLogin);
@@ -912,16 +927,14 @@
             this.panel_space2.Size = new System.Drawing.Size(1, 732);
             this.panel_space2.TabIndex = 4;
             // 
-            // pictureBox6
+            // axWindowsMediaPlayer1
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(225, 259);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 27);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(-13, -1);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(260, 46);
+            this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
             // MusicApp
             // 
@@ -956,6 +969,7 @@
             this.panel_Song.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pictureSong)).EndInit();
             this.panel_playlistButton.ResumeLayout(false);
@@ -963,6 +977,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_moreToolButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playlistButton)).EndInit();
+            this.panel_timePlayer.ResumeLayout(false);
             this.panel_buttonPlayer.ResumeLayout(false);
             this.panel_buttonPlayer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -975,7 +990,7 @@
             this.panel_logined.PerformLayout();
             this.panel_groupLogin.ResumeLayout(false);
             this.panel_groupLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1045,6 +1060,7 @@
         private System.Windows.Forms.Button button_login;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
 
