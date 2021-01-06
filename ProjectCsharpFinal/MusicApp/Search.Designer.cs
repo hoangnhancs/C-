@@ -504,10 +504,9 @@
             this.button_all.TabIndex = 4;
             this.button_all.Text = "Tất cả";
             this.button_all.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
+
             this.button_all.Click += new System.EventHandler(this.button_all_Click);
-=======
->>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
+
             // 
             // panel1
             // 
