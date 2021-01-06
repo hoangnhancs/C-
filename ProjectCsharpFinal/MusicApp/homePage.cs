@@ -50,7 +50,7 @@ namespace MusicApp
             panel_Home_4_2_2.Visible = false;
             panel_Home_4_3_2.Visible = false;
 
-            Dirpath = @"D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\slideShow";
+            Dirpath = @"E:\hoangnhancs\C-\ProjectCsharpFinal\slideShow";
             string[] files = Directory.GetFiles(Dirpath, "*.jpg");
             foreach (string file in files)
             {

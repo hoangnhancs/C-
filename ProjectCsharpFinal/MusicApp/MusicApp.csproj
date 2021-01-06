@@ -58,7 +58,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\albumDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\playlistDAO.cs" />
+    <Compile Include="DAO\singerDAO.cs" />
     <Compile Include="DAO\songDAO.cs" />
     <Compile Include="discover_album.cs">
       <SubType>Form</SubType>
@@ -84,6 +87,9 @@
     <Compile Include="discover_songs.Designer.cs">
       <DependentUpon>discover_songs.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\album.cs" />
+    <Compile Include="DTO\playlist.cs" />
+    <Compile Include="DTO\singer.cs" />
     <Compile Include="DTO\song.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
