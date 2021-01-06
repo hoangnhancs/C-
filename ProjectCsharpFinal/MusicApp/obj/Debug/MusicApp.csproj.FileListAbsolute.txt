@@ -16,6 +16,7 @@ D:\University\Nam3_Ky1\CSharp\do_an_cuoi_ki\MusicApp\MusicApp\obj\Debug\MusicApp
 D:\University\Nam3_Ky1\CSharp\do_an_cuoi_ki\MusicApp\MusicApp\obj\Debug\MusicApp.Song.resources
 D:\University\Nam3_Ky1\CSharp\do_an_cuoi_ki\MusicApp\MusicApp\obj\Debug\MusicApp.homePage.resources
 D:\University\Nam3_Ky1\CSharp\do_an_cuoi_ki\MusicApp\MusicApp\obj\Debug\MusicApp.Search.resources
+<<<<<<< HEAD
 D:\University\Nam3_Ky1\C-\MusicApp\bin\Debug\MusicApp.exe.config
 D:\University\Nam3_Ky1\C-\MusicApp\bin\Debug\MusicApp.exe
 D:\University\Nam3_Ky1\C-\MusicApp\bin\Debug\MusicApp.pdb
@@ -74,3 +75,23 @@ D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Karaoke
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Karaoke_search.resources
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\taglib-sharp.dll
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YouTubeSearch.dll
+=======
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\MusicApp.exe.config
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\MusicApp.exe
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\MusicApp.pdb
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csprojAssemblyReference.cache
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.discover_album.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.discover_playlist.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.discover_singer.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.discover_songs.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.MusicApp.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.homePage.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.import.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Properties.Resources.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Search.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Song.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.GenerateResource.cache
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.CoreCompileInputs.cache
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.exe
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.pdb
+>>>>>>> 9bde17f8818dbec624f1595529df2adc3116d3b3
