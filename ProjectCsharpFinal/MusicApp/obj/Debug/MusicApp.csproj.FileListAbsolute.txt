@@ -95,3 +95,21 @@ E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.CoreComp
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.exe
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.pdb
 >>>>>>> 9bde17f8818dbec624f1595529df2adc3116d3b3
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Newtonsoft.Json.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\taglib-sharp.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YoutubeExtractor.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YouTubeSearch.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Newtonsoft.Json.xml
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YoutubeExtractor.xml
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Interop.ShockwaveFlashObjects.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\Interop.ShockwaveFlashObjects.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.ResolveComReference.cache
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Karaoke.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Karaoke_record.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Karaoke_search.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Login.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.Recorded.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.SignUp.resources
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.CopyComplete
