@@ -54,9 +54,6 @@ namespace MusicApp.DAO
 
         }
 
-<<<<<<< HEAD
-       
-=======
         public List<song> getsongbyCategory(string cat)
         {
             List<song> lstsong = new List<song>();
@@ -73,6 +70,5 @@ namespace MusicApp.DAO
             return lstsong;
 
         }
->>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
     }
 }
