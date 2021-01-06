@@ -90,6 +90,10 @@
             this.label_Home_4 = new System.Windows.Forms.Label();
             this.pic_Sile = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel_main.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_Home_2_2_2.SuspendLayout();
@@ -277,6 +281,7 @@
             this.button1.Size = new System.Drawing.Size(23, 23);
             this.button1.TabIndex = 11;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -290,6 +295,7 @@
             this.button2.Size = new System.Drawing.Size(23, 23);
             this.button2.TabIndex = 10;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label_home_2_3_singer
             // 
@@ -395,6 +401,8 @@
             // 
             // panel_cl
             // 
+            this.panel_cl.Controls.Add(this.button6);
+            this.panel_cl.Controls.Add(this.button7);
             this.panel_cl.Controls.Add(this.panel_Home_3_3_2);
             this.panel_cl.Controls.Add(this.panel_Home_3_2_2);
             this.panel_cl.Controls.Add(this.panel_Home_3_1_2);
@@ -583,6 +591,8 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.button8);
+            this.panel10.Controls.Add(this.button9);
             this.panel10.Controls.Add(this.panel_Home_4_3_2);
             this.panel10.Controls.Add(this.panel_Home_4_2_2);
             this.panel10.Controls.Add(this.panel_Home_4_1_2);
@@ -666,6 +676,7 @@
             this.btn_Home_4_1.Size = new System.Drawing.Size(34, 58);
             this.btn_Home_4_1.TabIndex = 0;
             this.btn_Home_4_1.UseVisualStyleBackColor = true;
+            this.btn_Home_4_1.Click += new System.EventHandler(this.btn_Home_4_1_Click);
             // 
             // label_home_4_3_singer
             // 
@@ -782,13 +793,66 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::MusicApp.Properties.Resources.arrow_down_sign_to_navigate_right;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(724, 10);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(23, 23);
+            this.button6.TabIndex = 16;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::MusicApp.Properties.Resources.arrow_down_sign_to_navigate_left;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(682, 10);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(23, 23);
+            this.button7.TabIndex = 15;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::MusicApp.Properties.Resources.arrow_down_sign_to_navigate_right;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(725, 11);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(23, 23);
+            this.button8.TabIndex = 19;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackgroundImage = global::MusicApp.Properties.Resources.arrow_down_sign_to_navigate_left;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(683, 11);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(23, 23);
+            this.button9.TabIndex = 18;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // homePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(782, 711);
+            this.ClientSize = new System.Drawing.Size(803, 732);
             this.Controls.Add(this.pic_Sile);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel_cl);
@@ -883,5 +947,9 @@
         private System.Windows.Forms.Label label_home_4_3_singer;
         private System.Windows.Forms.Label label_home_4_2_singer;
         private System.Windows.Forms.Label label_home_4_1_singer;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }

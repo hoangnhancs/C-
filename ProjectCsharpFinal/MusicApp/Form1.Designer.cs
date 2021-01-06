@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusicApp));
             this.panel_MenuBar = new System.Windows.Forms.Panel();
             this.panel_karaoke = new System.Windows.Forms.Panel();
@@ -50,10 +51,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox_searchButton = new System.Windows.Forms.PictureBox();
-            this.panel_Login = new System.Windows.Forms.Panel();
-            this.button_signUp = new System.Windows.Forms.Button();
-            this.button_login = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel_logo = new System.Windows.Forms.Panel();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.panel_PlayBar = new System.Windows.Forms.Panel();
@@ -75,6 +72,7 @@
             this.label_playlistButton = new System.Windows.Forms.Label();
             this.pictureBox_playlistButton = new System.Windows.Forms.PictureBox();
             this.panel_timePlayer = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel_buttonPlayer = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -83,16 +81,11 @@
             this.pictureBox_buttonPlayer = new System.Windows.Forms.PictureBox();
             this.label_quality = new System.Windows.Forms.Label();
             this.panel_Main = new System.Windows.Forms.Panel();
-            this.panel_logined = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel_groupLogin = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel_space1 = new System.Windows.Forms.Panel();
             this.panel_space2 = new System.Windows.Forms.Panel();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel_Login = new System.Windows.Forms.Panel();
             this.panel_MenuBar.SuspendLayout();
             this.panel_karaoke.SuspendLayout();
             this.panel_Music.SuspendLayout();
@@ -102,7 +95,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_searchButton)).BeginInit();
-            this.panel_Login.SuspendLayout();
             this.panel_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.panel_PlayBar.SuspendLayout();
@@ -118,16 +110,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playlistButton)).BeginInit();
             this.panel_timePlayer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.panel_buttonPlayer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonNextLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonPlayer)).BeginInit();
-            this.panel_Main.SuspendLayout();
-            this.panel_logined.SuspendLayout();
-            this.panel_groupLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_MenuBar
@@ -157,7 +147,7 @@
             this.panel_karaoke.Controls.Add(this.button_recording);
             this.panel_karaoke.Controls.Add(this.button_recorded);
             this.panel_karaoke.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_karaoke.Location = new System.Drawing.Point(49, 547);
+            this.panel_karaoke.Location = new System.Drawing.Point(49, 520);
             this.panel_karaoke.Name = "panel_karaoke";
             this.panel_karaoke.Size = new System.Drawing.Size(169, 105);
             this.panel_karaoke.TabIndex = 10;
@@ -204,7 +194,7 @@
             this.button_karaoke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_karaoke.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_karaoke.ForeColor = System.Drawing.Color.White;
-            this.button_karaoke.Location = new System.Drawing.Point(49, 501);
+            this.button_karaoke.Location = new System.Drawing.Point(49, 474);
             this.button_karaoke.Name = "button_karaoke";
             this.button_karaoke.Size = new System.Drawing.Size(169, 46);
             this.button_karaoke.TabIndex = 9;
@@ -221,7 +211,7 @@
             this.button_importMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_importMusic.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_importMusic.ForeColor = System.Drawing.Color.White;
-            this.button_importMusic.Location = new System.Drawing.Point(49, 455);
+            this.button_importMusic.Location = new System.Drawing.Point(49, 428);
             this.button_importMusic.Name = "button_importMusic";
             this.button_importMusic.Size = new System.Drawing.Size(169, 46);
             this.button_importMusic.TabIndex = 8;
@@ -238,7 +228,7 @@
             this.panel_Music.Controls.Add(this.button_playlistSongs);
             this.panel_Music.Controls.Add(this.button_Songs);
             this.panel_Music.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Music.Location = new System.Drawing.Point(49, 274);
+            this.panel_Music.Location = new System.Drawing.Point(49, 247);
             this.panel_Music.Name = "panel_Music";
             this.panel_Music.Size = new System.Drawing.Size(169, 181);
             this.panel_Music.TabIndex = 6;
@@ -319,7 +309,7 @@
             this.button_discover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_discover.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_discover.ForeColor = System.Drawing.Color.White;
-            this.button_discover.Location = new System.Drawing.Point(49, 228);
+            this.button_discover.Location = new System.Drawing.Point(49, 201);
             this.button_discover.Name = "button_discover";
             this.button_discover.Size = new System.Drawing.Size(169, 46);
             this.button_discover.TabIndex = 5;
@@ -336,7 +326,7 @@
             this.button_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_home.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_home.ForeColor = System.Drawing.Color.White;
-            this.button_home.Location = new System.Drawing.Point(49, 182);
+            this.button_home.Location = new System.Drawing.Point(49, 155);
             this.button_home.Name = "button_home";
             this.button_home.Size = new System.Drawing.Size(169, 46);
             this.button_home.TabIndex = 4;
@@ -353,7 +343,7 @@
             this.button_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_search.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_search.ForeColor = System.Drawing.Color.White;
-            this.button_search.Location = new System.Drawing.Point(49, 136);
+            this.button_search.Location = new System.Drawing.Point(49, 109);
             this.button_search.Name = "button_search";
             this.button_search.Size = new System.Drawing.Size(169, 46);
             this.button_search.TabIndex = 3;
@@ -372,9 +362,9 @@
             this.panel_icon.Controls.Add(this.pictureBox7);
             this.panel_icon.Controls.Add(this.pictureBox_searchButton);
             this.panel_icon.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_icon.Location = new System.Drawing.Point(0, 136);
+            this.panel_icon.Location = new System.Drawing.Point(0, 109);
             this.panel_icon.Name = "panel_icon";
-            this.panel_icon.Size = new System.Drawing.Size(49, 596);
+            this.panel_icon.Size = new System.Drawing.Size(49, 623);
             this.panel_icon.TabIndex = 2;
             // 
             // pictureBox_karaoke
@@ -446,57 +436,6 @@
             this.pictureBox_searchButton.TabIndex = 0;
             this.pictureBox_searchButton.TabStop = false;
             // 
-            // panel_Login
-            // 
-            this.panel_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.panel_Login.Controls.Add(this.button_signUp);
-            this.panel_Login.Controls.Add(this.button_login);
-            this.panel_Login.Controls.Add(this.label2);
-            this.panel_Login.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Login.Location = new System.Drawing.Point(0, 79);
-            this.panel_Login.Name = "panel_Login";
-            this.panel_Login.Size = new System.Drawing.Size(218, 57);
-            this.panel_Login.TabIndex = 1;
-            // 
-            // button_signUp
-            // 
-            this.button_signUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.button_signUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_signUp.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_signUp.ForeColor = System.Drawing.Color.White;
-            this.button_signUp.Location = new System.Drawing.Point(117, 6);
-            this.button_signUp.Name = "button_signUp";
-            this.button_signUp.Size = new System.Drawing.Size(98, 45);
-            this.button_signUp.TabIndex = 4;
-            this.button_signUp.Text = "Đăng ký";
-            this.button_signUp.UseVisualStyleBackColor = false;
-            this.button_signUp.Click += new System.EventHandler(this.button_signUp_Click);
-            // 
-            // button_login
-            // 
-            this.button_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.button_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_login.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_login.ForeColor = System.Drawing.Color.White;
-            this.button_login.Location = new System.Drawing.Point(3, 6);
-            this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(98, 45);
-            this.button_login.TabIndex = 3;
-            this.button_login.Text = "Đăng nhập";
-            this.button_login.UseVisualStyleBackColor = false;
-            this.button_login.Click += new System.EventHandler(this.button_login_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(103, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "|";
-            // 
             // panel_logo
             // 
             this.panel_logo.Controls.Add(this.pictureBox_logo);
@@ -534,6 +473,7 @@
             // panel_listSong
             // 
             this.panel_listSong.AutoScroll = true;
+            this.panel_listSong.Controls.Add(this.trackBar2);
             this.panel_listSong.Controls.Add(this.panel_moreToolButton);
             this.panel_listSong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_listSong.Location = new System.Drawing.Point(0, 315);
@@ -568,6 +508,7 @@
             this.button_setTime.Text = "Hẹn thời gian phát";
             this.button_setTime.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_setTime.UseVisualStyleBackColor = false;
+            this.button_setTime.Click += new System.EventHandler(this.button_setTime_Click);
             // 
             // button_moveToSong
             // 
@@ -707,6 +648,8 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pictureBox4.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
             // 
             // label_playlistButton
             // 
@@ -738,6 +681,15 @@
             this.panel_timePlayer.Name = "panel_timePlayer";
             this.panel_timePlayer.Size = new System.Drawing.Size(297, 15);
             this.panel_timePlayer.TabIndex = 2;
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(-13, -1);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(260, 46);
+            this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
             // panel_buttonPlayer
             // 
@@ -802,6 +754,7 @@
             this.pictureBox_buttonPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_buttonPlayer.TabIndex = 1;
             this.pictureBox_buttonPlayer.TabStop = false;
+            this.pictureBox_buttonPlayer.Click += new System.EventHandler(this.pictureBox_buttonPlayer_Click);
             // 
             // label_quality
             // 
@@ -817,8 +770,6 @@
             // panel_Main
             // 
             this.panel_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
-            this.panel_Main.Controls.Add(this.panel_logined);
-            this.panel_Main.Controls.Add(this.panel_groupLogin);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Main.Location = new System.Drawing.Point(218, 0);
             this.panel_Main.Margin = new System.Windows.Forms.Padding(0);
@@ -826,90 +777,6 @@
             this.panel_Main.Size = new System.Drawing.Size(803, 732);
             this.panel_Main.TabIndex = 2;
             this.panel_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Main_Paint);
-            // 
-            // panel_logined
-            // 
-            this.panel_logined.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.panel_logined.Controls.Add(this.label4);
-            this.panel_logined.Controls.Add(this.label3);
-            this.panel_logined.Location = new System.Drawing.Point(7, 12);
-            this.panel_logined.Name = "panel_logined";
-            this.panel_logined.Size = new System.Drawing.Size(218, 57);
-            this.panel_logined.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(96, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Hoàng Thắng";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(17, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Xin chào, ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // panel_groupLogin
-            // 
-            this.panel_groupLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.panel_groupLogin.Controls.Add(this.button1);
-            this.panel_groupLogin.Controls.Add(this.button2);
-            this.panel_groupLogin.Controls.Add(this.label1);
-            this.panel_groupLogin.Location = new System.Drawing.Point(6, 79);
-            this.panel_groupLogin.Name = "panel_groupLogin";
-            this.panel_groupLogin.Size = new System.Drawing.Size(218, 57);
-            this.panel_groupLogin.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(117, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 45);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Đăng ký";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 45);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Đăng nhập";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(103, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 18);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "|";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // panel_space1
             // 
@@ -927,19 +794,38 @@
             this.panel_space2.Size = new System.Drawing.Size(1, 732);
             this.panel_space2.TabIndex = 4;
             // 
-            // axWindowsMediaPlayer1
+            // trackBar2
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(-13, -1);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(260, 46);
-            this.axWindowsMediaPlayer1.TabIndex = 0;
+            this.trackBar2.Location = new System.Drawing.Point(14, 47);
+            this.trackBar2.Maximum = 100;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBar2.Size = new System.Drawing.Size(56, 173);
+            this.trackBar2.TabIndex = 9;
+            this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar2.Visible = false;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            this.trackBar2.MouseLeave += new System.EventHandler(this.trackBar2_MouseLeave);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            // 
+            // panel_Login
+            // 
+            this.panel_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.panel_Login.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Login.Location = new System.Drawing.Point(0, 79);
+            this.panel_Login.Name = "panel_Login";
+            this.panel_Login.Size = new System.Drawing.Size(218, 30);
+            this.panel_Login.TabIndex = 1;
             // 
             // MusicApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1318, 732);
             this.Controls.Add(this.panel_space2);
             this.Controls.Add(this.panel_space1);
@@ -959,12 +845,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_searchButton)).EndInit();
-            this.panel_Login.ResumeLayout(false);
-            this.panel_Login.PerformLayout();
             this.panel_logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.panel_PlayBar.ResumeLayout(false);
             this.panel_listSong.ResumeLayout(false);
+            this.panel_listSong.PerformLayout();
             this.panel_moreToolButton.ResumeLayout(false);
             this.panel_Song.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -978,6 +863,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_playlistButton)).EndInit();
             this.panel_timePlayer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.panel_buttonPlayer.ResumeLayout(false);
             this.panel_buttonPlayer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -985,12 +871,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonNextLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonPlayer)).EndInit();
-            this.panel_Main.ResumeLayout(false);
-            this.panel_logined.ResumeLayout(false);
-            this.panel_logined.PerformLayout();
-            this.panel_groupLogin.ResumeLayout(false);
-            this.panel_groupLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1024,7 +905,6 @@
         private System.Windows.Forms.Panel panel_listSong;
         private System.Windows.Forms.Panel panel_logo;
         private System.Windows.Forms.PictureBox pictureBox_logo;
-        private System.Windows.Forms.Panel panel_Login;
         private System.Windows.Forms.Button button_search;
         private System.Windows.Forms.Panel panel_icon;
         private System.Windows.Forms.Panel panel_Music;
@@ -1049,18 +929,11 @@
         private System.Windows.Forms.Panel panel_karaoke;
         private System.Windows.Forms.Button button_recording;
         private System.Windows.Forms.Button button_recorded;
-        private System.Windows.Forms.Panel panel_groupLogin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel_logined;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button_signUp;
-        private System.Windows.Forms.Button button_login;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel_Login;
     }
 }
 

@@ -256,6 +256,8 @@
     <Content Include="bin\Debug\YoutubeExtractor.dll" />
     <Content Include="bin\Debug\YoutubeExtractor.xml" />
     <Content Include="bin\Debug\YouTubeSearch.dll" />
+    <Content Include="icon\music_play.png" />
+    <Content Include="icon\Picture1.png" />
     <Content Include="icon\up_arrow.png" />
     <Content Include="obj\Debug\AxInterop.MOVIEPLAYERLib.dll" />
     <Content Include="obj\Debug\AxInterop.ShockwaveFlashObjects.dll" />

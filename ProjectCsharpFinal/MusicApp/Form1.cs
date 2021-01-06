@@ -7,27 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MusicApp.DAO;
+using MusicApp.DTO;
 
 namespace MusicApp
 {
     public partial class MusicApp : Form
     {
-        string path;
         public MusicApp()
         {
             InitializeComponent();
-            path = homePage.SongNowPlaying;
-        }
-
-        public void load()
-        {
-            label_nameSong.Text = path;
         }
         // biến lưu giữ trạng thái của main panel
 
         public static string songNameKaraoke = "";
 
         // thêm form vào panel main
+
         private Form activeForm = null;
         private void openChildForm(Form childForm, bool karaokeForm=false)
         {
@@ -53,7 +49,7 @@ namespace MusicApp
 
         private void groupBox_Song_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void button_play_Click(object sender, EventArgs e)
@@ -85,10 +81,6 @@ namespace MusicApp
             button_moveToSong.FlatAppearance.BorderSize = 0;
             button_setTime.FlatAppearance.BorderSize = 0;
 
-            // login button
-            button_login.FlatAppearance.BorderSize = 0;
-            button_signUp.FlatAppearance.BorderSize = 0;
-
             //karaoke
             button_recorded.FlatAppearance.BorderSize = 0;
             button_recording.FlatAppearance.BorderSize = 0;
@@ -96,6 +88,8 @@ namespace MusicApp
             // load form vào panel main
             Form homePage = new homePage();
             openChildForm(homePage);
+
+            trackBar2.Value = axWindowsMediaPlayer1.settings.volume;
         }
 
         private void panel_MenuBar_Paint(object sender, PaintEventArgs e)
@@ -145,9 +139,27 @@ namespace MusicApp
             }    
         }
 
+        private void PlaySongInPlaylist(song recentSong)
+        {
+            pictureBox_pictureSong.Image = Image.FromFile(recentSong.Image_path);
+            label_nameSong.Text = recentSong.Name;
+            label_authorSong.Text = recentSong.Singer;
+            axWindowsMediaPlayer1.URL = recentSong.Song_path;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            pictureBox_buttonPlayer.Image = Image.FromFile(@"D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\icon\Picture1.png");
+        }
+
+        public static bool checkOpenForm = true;
+        public static song SlectedSong;
+        public static Form openedForm = null;
         private void panel_Main_Paint(object sender, PaintEventArgs e)
         {
-
+            if (checkOpenForm == false)
+            {
+                PlaySongInPlaylist(SlectedSong);
+                openChildForm(openedForm, false);
+                checkOpenForm = true;
+            }
         }
 
         private void button_Songs_Click(object sender, EventArgs e)
@@ -283,14 +295,53 @@ namespace MusicApp
         private void pictureBox6_Click_1(object sender, EventArgs e)
         {
             songNameKaraoke = label_nameSong.Text + " karaoke";
-
+            axWindowsMediaPlayer1.Ctlcontrols.pause();
             Form karaoke = new Karaoke();
             openChildForm(karaoke, true);
         }
 
         private void pictureBox_pictureSong_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void pictureBox_buttonPlayer_Click(object sender, EventArgs e)
+        {
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.pause();
+                pictureBox_buttonPlayer.Image = Image.FromFile(@"D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\icon\music_play.png");
+            }
+            else
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+                pictureBox_buttonPlayer.Image = Image.FromFile(@"D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\icon\Picture1.png");
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_MouseHover(object sender, EventArgs e)
+        {
+            trackBar2.Visible = true;
+        }
+
+        private void trackBar2_MouseLeave(object sender, EventArgs e)
+        {
+            trackBar2.Visible = false;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
+        }
+
+        private void button_setTime_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

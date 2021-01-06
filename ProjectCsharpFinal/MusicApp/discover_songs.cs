@@ -45,5 +45,25 @@ namespace MusicApp
         {
 
         }
+
+        private void panel_item_1_1_MouseHover(object sender, EventArgs e)
+        {
+            panel_item_1_2.Visible = true;
+        }
+
+        private void panel_item_1_2_MouseLeave(object sender, EventArgs e)
+        {
+            panel_item_1_2.Visible = false;
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel13_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -15,11 +15,15 @@ namespace MusicApp
 {
     public partial class homePage : Form
     {
-
+        public event EventHandler Changed;
+        int nhactre = 0;
+        int nhacnuocngoai = 0;
+        int nhacremix = 0;
+   
         string Dirpath;
 
         int imgindex;
-        int phhanhindex;
+
         public homePage()
         {
             InitializeComponent();
@@ -45,11 +49,23 @@ namespace MusicApp
         public List<song> lstSongNhacRemix;
         public int indexCurrentNhacTre = 0; 
 
+        private void loaddata()
+        {
+            string query1 = "nhạc trẻ";
+            lstSongNhactre = new List<song>();
+            lstSongNhactre = songDAO.Instance.getsongbyCategory(query1);
+
+            string query2 = "nhạc nước ngoài";
+            lstSongNhacNuocNgoai = new List<song>();
+            lstSongNhacNuocNgoai = songDAO.Instance.getsongbyCategory(query2);
+
+            string query3 = "nhạc remix";
+            lstSongNhacRemix = new List<song>();
+            lstSongNhacRemix = songDAO.Instance.getsongbyCategory(query3);
+        }
+
         private void addDataNhacViet()
         {
-            string query = "nhạc trẻ";
-            lstSongNhactre = new List<song>();
-            lstSongNhactre = songDAO.Instance.getsongbyCategory(query);
 
             //panel_item1.Visible = true;
             //panel_item2.Visible = true;
@@ -62,20 +78,18 @@ namespace MusicApp
 
             for (int i = 0; i < 3; i++)
             {
-                panels_1[i].BackgroundImage = Image.FromFile(lstSongNhactre[i].Image_path);
+                panels_1[i].BackgroundImage = Image.FromFile(lstSongNhactre[nhactre+i].Image_path);
                 panels_1[i].BackgroundImageLayout = ImageLayout.Stretch;
-                panels_2[i].BackgroundImage = Image.FromFile(lstSongNhactre[i].Image_path);
+                panels_2[i].BackgroundImage = Image.FromFile(lstSongNhactre[nhactre+i].Image_path);
                 panels_2[i].BackgroundImageLayout = ImageLayout.Stretch;
-                label_titel[i].Text = lstSongNhactre[i].Name;
-                label_singer[i].Text = lstSongNhactre[i].Singer;
+                label_titel[i].Text = lstSongNhactre[nhactre+i].Name;
+                label_singer[i].Text = lstSongNhactre[nhactre+i].Singer;
             }
         }
 
         private void addDataNhacNuocNgoai()
         {
-            string query = "nhạc nước ngoài";
-            lstSongNhacNuocNgoai = new List<song>();
-            lstSongNhacNuocNgoai = songDAO.Instance.getsongbyCategory(query);
+            
 
             //panel_item1.Visible = true;
             //panel_item2.Visible = true;
@@ -99,9 +113,7 @@ namespace MusicApp
 
         private void addDataRemix()
         {
-            string query = "nhạc remix";
-            lstSongNhacRemix = new List<song>();
-            lstSongNhacRemix = songDAO.Instance.getsongbyCategory(query);
+            
 
             //panel_item1.Visible = true;
             //panel_item2.Visible = true;
@@ -126,6 +138,8 @@ namespace MusicApp
 
         private void homePage_Load(object sender, EventArgs e)
         {
+            loaddata();
+
             addDataNhacViet();
             addDataNhacNuocNgoai();
             addDataRemix();
@@ -160,7 +174,6 @@ namespace MusicApp
             btn_Next.Enabled = true;
             imgindex = 0;
             pic_Sile.ImageLocation = Convert.ToString(listBox1.Items[imgindex]);
-            phhanhindex = 0;
             timer1.Interval = 2 * 1000;
 
             timer1.Start();
@@ -330,9 +343,48 @@ namespace MusicApp
         public static string SongNowPlaying;
         private void btn_Home_2_1_Click(object sender, EventArgs e)
         {
-            SongNowPlaying = lstSongNhactre[0].Name;
-            
+            passDataMain(lstSongNhactre[0]);
             //Console.WriteLine(SongNowPlaying);
+        }
+
+        private void passDataMain(song loaded)
+        {
+            MusicApp.checkOpenForm = false;
+            MusicApp.SlectedSong = loaded;
+            MusicApp.openedForm = new homePage();
+            this.Close();
+        }
+
+        private void btn_Home_4_1_Click(object sender, EventArgs e)
+        {
+            passDataMain(lstSongNhacRemix[0]);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            if (nhactre <= lstSongNhactre.Count-4)
+            {
+                nhactre += 1;
+                addDataNhacViet();
+                
+            }    
+            
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (nhactre >= 1)
+            {
+                nhactre -= 1;
+                addDataNhacViet();
+
+            }
         }
     }
 }
