@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +47,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="taglib-sharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\taglib-sharp-netstandard2.0.2.1.0\lib\netstandard2.0\taglib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="YoutubeExtractor, Version=0.10.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YoutubeExtractor.0.10.11\lib\net35\YoutubeExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="YouTubeSearch, Version=2.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YouTubeSearch.2.2.6\lib\netstandard2.0\YouTubeSearch.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="discover_album.cs">
@@ -88,13 +100,49 @@
     <Compile Include="import.Designer.cs">
       <DependentUpon>import.cs</DependentUpon>
     </Compile>
+    <Compile Include="Karaoke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karaoke.Designer.cs">
+      <DependentUpon>Karaoke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karaoke_record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karaoke_record.Designer.cs">
+      <DependentUpon>Karaoke_record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karaoke_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karaoke_search.Designer.cs">
+      <DependentUpon>Karaoke_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recorded.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recorded.Designer.cs">
+      <DependentUpon>Recorded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Search.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Song.cs">
       <SubType>Form</SubType>
@@ -103,6 +151,7 @@
       <DependentUpon>Song.cs</DependentUpon>
     </Compile>
     <Compile Include="static_class\openChildFrom.cs" />
+    <Compile Include="static_class\video.cs" />
     <EmbeddedResource Include="discover_album.resx">
       <DependentUpon>discover_album.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +173,18 @@
     <EmbeddedResource Include="import.resx">
       <DependentUpon>import.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Karaoke.resx">
+      <DependentUpon>Karaoke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karaoke_record.resx">
+      <DependentUpon>Karaoke_record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karaoke_search.resx">
+      <DependentUpon>Karaoke_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -133,12 +194,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Recorded.resx">
+      <DependentUpon>Recorded.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Song.resx">
       <DependentUpon>Song.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,6 +219,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\up_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMOVIEPLAYERLib">
+      <Guid>{062F78EB-5E1D-43A7-9135-96E1392B3950}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MOVIEPLAYERLib">
+      <Guid>{062F78EB-5E1D-43A7-9135-96E1392B3950}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

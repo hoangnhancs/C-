@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusicApp));
             this.panel_MenuBar = new System.Windows.Forms.Panel();
+            this.panel_karaoke = new System.Windows.Forms.Panel();
+            this.button_recording = new System.Windows.Forms.Button();
+            this.button_recorded = new System.Windows.Forms.Button();
+            this.button_karaoke = new System.Windows.Forms.Button();
             this.button_importMusic = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel_Music = new System.Windows.Forms.Panel();
             this.button_singer = new System.Windows.Forms.Button();
             this.button_album = new System.Windows.Forms.Button();
@@ -41,15 +44,16 @@
             this.button_home = new System.Windows.Forms.Button();
             this.button_search = new System.Windows.Forms.Button();
             this.panel_icon = new System.Windows.Forms.Panel();
+            this.pictureBox_karaoke = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel_spaceListDis = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox_searchButton = new System.Windows.Forms.PictureBox();
             this.panel_Login = new System.Windows.Forms.Panel();
+            this.button_signUp = new System.Windows.Forms.Button();
+            this.button_login = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label_login = new System.Windows.Forms.Label();
             this.panel_logo = new System.Windows.Forms.Panel();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.panel_PlayBar = new System.Windows.Forms.Panel();
@@ -78,12 +82,21 @@
             this.pictureBox_buttonPlayer = new System.Windows.Forms.PictureBox();
             this.label_quality = new System.Windows.Forms.Label();
             this.panel_Main = new System.Windows.Forms.Panel();
+            this.panel_logined = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel_groupLogin = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_space1 = new System.Windows.Forms.Panel();
             this.panel_space2 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel_MenuBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel_karaoke.SuspendLayout();
             this.panel_Music.SuspendLayout();
             this.panel_icon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_karaoke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -108,14 +121,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonNextLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonPlayer)).BeginInit();
+            this.panel_Main.SuspendLayout();
+            this.panel_logined.SuspendLayout();
+            this.panel_groupLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_MenuBar
             // 
             this.panel_MenuBar.AutoScroll = true;
             this.panel_MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.panel_MenuBar.Controls.Add(this.panel_karaoke);
+            this.panel_MenuBar.Controls.Add(this.button_karaoke);
             this.panel_MenuBar.Controls.Add(this.button_importMusic);
-            this.panel_MenuBar.Controls.Add(this.pictureBox6);
             this.panel_MenuBar.Controls.Add(this.panel_Music);
             this.panel_MenuBar.Controls.Add(this.button_discover);
             this.panel_MenuBar.Controls.Add(this.button_home);
@@ -130,6 +148,68 @@
             this.panel_MenuBar.Size = new System.Drawing.Size(218, 732);
             this.panel_MenuBar.TabIndex = 0;
             this.panel_MenuBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_MenuBar_Paint);
+            // 
+            // panel_karaoke
+            // 
+            this.panel_karaoke.Controls.Add(this.button_recording);
+            this.panel_karaoke.Controls.Add(this.button_recorded);
+            this.panel_karaoke.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_karaoke.Location = new System.Drawing.Point(49, 547);
+            this.panel_karaoke.Name = "panel_karaoke";
+            this.panel_karaoke.Size = new System.Drawing.Size(169, 105);
+            this.panel_karaoke.TabIndex = 10;
+            this.panel_karaoke.Visible = false;
+            // 
+            // button_recording
+            // 
+            this.button_recording.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.button_recording.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_recording.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_recording.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_recording.ForeColor = System.Drawing.Color.Silver;
+            this.button_recording.Location = new System.Drawing.Point(0, 46);
+            this.button_recording.Name = "button_recording";
+            this.button_recording.Size = new System.Drawing.Size(169, 46);
+            this.button_recording.TabIndex = 11;
+            this.button_recording.TabStop = false;
+            this.button_recording.Text = "Karaoke";
+            this.button_recording.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_recording.UseVisualStyleBackColor = false;
+            this.button_recording.Click += new System.EventHandler(this.button_recording_Click);
+            // 
+            // button_recorded
+            // 
+            this.button_recorded.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.button_recorded.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_recorded.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_recorded.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_recorded.ForeColor = System.Drawing.Color.Silver;
+            this.button_recorded.Location = new System.Drawing.Point(0, 0);
+            this.button_recorded.Name = "button_recorded";
+            this.button_recorded.Size = new System.Drawing.Size(169, 46);
+            this.button_recorded.TabIndex = 10;
+            this.button_recorded.TabStop = false;
+            this.button_recorded.Text = "Đã thu âm";
+            this.button_recorded.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_recorded.UseVisualStyleBackColor = false;
+            this.button_recorded.Click += new System.EventHandler(this.button_recorded_Click);
+            // 
+            // button_karaoke
+            // 
+            this.button_karaoke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.button_karaoke.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_karaoke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_karaoke.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_karaoke.ForeColor = System.Drawing.Color.White;
+            this.button_karaoke.Location = new System.Drawing.Point(49, 501);
+            this.button_karaoke.Name = "button_karaoke";
+            this.button_karaoke.Size = new System.Drawing.Size(169, 46);
+            this.button_karaoke.TabIndex = 9;
+            this.button_karaoke.TabStop = false;
+            this.button_karaoke.Text = "Karaoke";
+            this.button_karaoke.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_karaoke.UseVisualStyleBackColor = false;
+            this.button_karaoke.Click += new System.EventHandler(this.button_karaoke_Click);
             // 
             // button_importMusic
             // 
@@ -147,17 +227,6 @@
             this.button_importMusic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_importMusic.UseVisualStyleBackColor = false;
             this.button_importMusic.Click += new System.EventHandler(this.button_importMusic_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(187, 243);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(26, 20);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // panel_Music
             // 
@@ -293,6 +362,7 @@
             // 
             // panel_icon
             // 
+            this.panel_icon.Controls.Add(this.pictureBox_karaoke);
             this.panel_icon.Controls.Add(this.pictureBox5);
             this.panel_icon.Controls.Add(this.panel_spaceListDis);
             this.panel_icon.Controls.Add(this.pictureBox8);
@@ -303,6 +373,18 @@
             this.panel_icon.Name = "panel_icon";
             this.panel_icon.Size = new System.Drawing.Size(49, 596);
             this.panel_icon.TabIndex = 2;
+            // 
+            // pictureBox_karaoke
+            // 
+            this.pictureBox_karaoke.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox_karaoke.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_karaoke.Image")));
+            this.pictureBox_karaoke.Location = new System.Drawing.Point(0, 365);
+            this.pictureBox_karaoke.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox_karaoke.Name = "pictureBox_karaoke";
+            this.pictureBox_karaoke.Size = new System.Drawing.Size(49, 46);
+            this.pictureBox_karaoke.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_karaoke.TabIndex = 5;
+            this.pictureBox_karaoke.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -364,47 +446,53 @@
             // panel_Login
             // 
             this.panel_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.panel_Login.Controls.Add(this.button_signUp);
+            this.panel_Login.Controls.Add(this.button_login);
             this.panel_Login.Controls.Add(this.label2);
-            this.panel_Login.Controls.Add(this.label1);
-            this.panel_Login.Controls.Add(this.label_login);
             this.panel_Login.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Login.Location = new System.Drawing.Point(0, 79);
             this.panel_Login.Name = "panel_Login";
             this.panel_Login.Size = new System.Drawing.Size(218, 57);
             this.panel_Login.TabIndex = 1;
             // 
+            // button_signUp
+            // 
+            this.button_signUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.button_signUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_signUp.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_signUp.ForeColor = System.Drawing.Color.White;
+            this.button_signUp.Location = new System.Drawing.Point(117, 6);
+            this.button_signUp.Name = "button_signUp";
+            this.button_signUp.Size = new System.Drawing.Size(98, 45);
+            this.button_signUp.TabIndex = 4;
+            this.button_signUp.Text = "Đăng ký";
+            this.button_signUp.UseVisualStyleBackColor = false;
+            this.button_signUp.Click += new System.EventHandler(this.button_signUp_Click);
+            // 
+            // button_login
+            // 
+            this.button_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.button_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_login.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_login.ForeColor = System.Drawing.Color.White;
+            this.button_login.Location = new System.Drawing.Point(3, 6);
+            this.button_login.Name = "button_login";
+            this.button_login.Size = new System.Drawing.Size(98, 45);
+            this.button_login.TabIndex = 3;
+            this.button_login.Text = "Đăng nhập";
+            this.button_login.UseVisualStyleBackColor = false;
+            this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(116, 16);
+            this.label2.Location = new System.Drawing.Point(103, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(13, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "|";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(132, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Đăng kí";
-            // 
-            // label_login
-            // 
-            this.label_login.AutoSize = true;
-            this.label_login.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_login.ForeColor = System.Drawing.Color.White;
-            this.label_login.Location = new System.Drawing.Point(19, 17);
-            this.label_login.Name = "label_login";
-            this.label_login.Size = new System.Drawing.Size(87, 18);
-            this.label_login.TabIndex = 0;
-            this.label_login.Text = "Đăng nhập";
             // 
             // panel_logo
             // 
@@ -458,7 +546,7 @@
             this.panel_moreToolButton.Controls.Add(this.button_addPlaylist);
             this.panel_moreToolButton.Location = new System.Drawing.Point(88, 48);
             this.panel_moreToolButton.Name = "panel_moreToolButton";
-            this.panel_moreToolButton.Size = new System.Drawing.Size(200, 142);
+            this.panel_moreToolButton.Size = new System.Drawing.Size(200, 145);
             this.panel_moreToolButton.TabIndex = 0;
             this.panel_moreToolButton.Visible = false;
             // 
@@ -475,7 +563,7 @@
             this.button_setTime.TabIndex = 8;
             this.button_setTime.TabStop = false;
             this.button_setTime.Text = "Hẹn thời gian phát";
-            this.button_setTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_setTime.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_setTime.UseVisualStyleBackColor = false;
             // 
             // button_moveToSong
@@ -491,7 +579,7 @@
             this.button_moveToSong.TabIndex = 7;
             this.button_moveToSong.TabStop = false;
             this.button_moveToSong.Text = "Đi đến bài hát";
-            this.button_moveToSong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_moveToSong.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_moveToSong.UseVisualStyleBackColor = false;
             // 
             // button_addPlaylist
@@ -507,7 +595,7 @@
             this.button_addPlaylist.TabIndex = 6;
             this.button_addPlaylist.TabStop = false;
             this.button_addPlaylist.Text = "Thêm vào Playlist";
-            this.button_addPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_addPlaylist.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_addPlaylist.UseVisualStyleBackColor = false;
             // 
             // panel_Song
@@ -522,6 +610,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
+            this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.label_authorSong);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label_nameSong);
@@ -713,6 +802,8 @@
             // 
             this.panel_Main.AutoScroll = true;
             this.panel_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.panel_Main.Controls.Add(this.panel_logined);
+            this.panel_Main.Controls.Add(this.panel_groupLogin);
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Main.Location = new System.Drawing.Point(218, 0);
             this.panel_Main.Margin = new System.Windows.Forms.Padding(0);
@@ -720,6 +811,90 @@
             this.panel_Main.Size = new System.Drawing.Size(803, 732);
             this.panel_Main.TabIndex = 2;
             this.panel_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Main_Paint);
+            // 
+            // panel_logined
+            // 
+            this.panel_logined.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.panel_logined.Controls.Add(this.label4);
+            this.panel_logined.Controls.Add(this.label3);
+            this.panel_logined.Location = new System.Drawing.Point(7, 12);
+            this.panel_logined.Name = "panel_logined";
+            this.panel_logined.Size = new System.Drawing.Size(218, 57);
+            this.panel_logined.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(96, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 18);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Hoàng Thắng";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(17, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Xin chào, ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // panel_groupLogin
+            // 
+            this.panel_groupLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.panel_groupLogin.Controls.Add(this.button1);
+            this.panel_groupLogin.Controls.Add(this.button2);
+            this.panel_groupLogin.Controls.Add(this.label1);
+            this.panel_groupLogin.Location = new System.Drawing.Point(6, 79);
+            this.panel_groupLogin.Name = "panel_groupLogin";
+            this.panel_groupLogin.Size = new System.Drawing.Size(218, 57);
+            this.panel_groupLogin.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(117, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 45);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Đăng ký";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(3, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(98, 45);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Đăng nhập";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(103, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 18);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "|";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // panel_space1
             // 
@@ -737,6 +912,17 @@
             this.panel_space2.Size = new System.Drawing.Size(1, 732);
             this.panel_space2.TabIndex = 4;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(225, 259);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 27);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
+            // 
             // MusicApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -752,9 +938,10 @@
             this.Text = "Phần mền nghe nhạc";
             this.Load += new System.EventHandler(this.MusicApp_Load);
             this.panel_MenuBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel_karaoke.ResumeLayout(false);
             this.panel_Music.ResumeLayout(false);
             this.panel_icon.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_karaoke)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -783,6 +970,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonNextLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_buttonPlayer)).EndInit();
+            this.panel_Main.ResumeLayout(false);
+            this.panel_logined.ResumeLayout(false);
+            this.panel_logined.PerformLayout();
+            this.panel_groupLogin.ResumeLayout(false);
+            this.panel_groupLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -825,7 +1018,6 @@
         private System.Windows.Forms.Button button_Songs;
         private System.Windows.Forms.Button button_discover;
         private System.Windows.Forms.Button button_home;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button button_singer;
         private System.Windows.Forms.PictureBox pictureBox_searchButton;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -837,9 +1029,22 @@
         private System.Windows.Forms.Button button_importMusic;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel_spaceListDis;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button_karaoke;
+        private System.Windows.Forms.PictureBox pictureBox_karaoke;
+        private System.Windows.Forms.Panel panel_karaoke;
+        private System.Windows.Forms.Button button_recording;
+        private System.Windows.Forms.Button button_recorded;
+        private System.Windows.Forms.Panel panel_groupLogin;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label_login;
+        private System.Windows.Forms.Panel panel_logined;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button_signUp;
+        private System.Windows.Forms.Button button_login;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
 

@@ -18,12 +18,20 @@ namespace MusicApp
         }
         // biến lưu giữ trạng thái của main panel
 
-
+        public static string songNameKaraoke = "";
 
         // thêm form vào panel main
         private Form activeForm = null;
-        private void openChildForm(Form childForm)
+        private void openChildForm(Form childForm, bool karaokeForm=false)
         {
+            if (karaokeForm)
+            {
+                panel_PlayBar.Visible = false;
+            }
+            else
+            {
+                panel_PlayBar.Visible = true;
+            }
             if (activeForm != null)
                 activeForm.Close();
             activeForm = childForm;
@@ -63,11 +71,20 @@ namespace MusicApp
             button_discover.FlatAppearance.BorderSize = 0;
             button_Songs.FlatAppearance.BorderSize = 0;
             button_importMusic.FlatAppearance.BorderSize = 0;
+            button_karaoke.FlatAppearance.BorderSize = 0;
 
             // moreTool button
             button_addPlaylist.FlatAppearance.BorderSize = 0;
             button_moveToSong.FlatAppearance.BorderSize = 0;
             button_setTime.FlatAppearance.BorderSize = 0;
+
+            // login button
+            button_login.FlatAppearance.BorderSize = 0;
+            button_signUp.FlatAppearance.BorderSize = 0;
+
+            //karaoke
+            button_recorded.FlatAppearance.BorderSize = 0;
+            button_recording.FlatAppearance.BorderSize = 0;
         }
 
         private void panel_MenuBar_Paint(object sender, PaintEventArgs e)
@@ -164,6 +181,100 @@ namespace MusicApp
         {
             Form search = new Search();
             openChildForm(search);
+        }
+
+        private void label_login_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+
+        private Form activeFormLogin = null;
+        private void button_login_Click(object sender, EventArgs e)
+        {
+            if (activeFormLogin == null)
+            {
+                Form loginForm = new Login();
+                activeFormLogin = loginForm;
+                loginForm.Show();
+            }
+            else
+            {
+                activeFormLogin.Close();
+                activeFormLogin = null;
+            }
+
+        }
+
+        private Form activeFormSignUp = null;
+        private void button_signUp_Click(object sender, EventArgs e)
+        {
+            if (activeFormSignUp == null)
+            {
+                Form signUpForm = new SignUp();
+                activeFormLogin = signUpForm;
+                signUpForm.Show();
+            }
+            else
+            {
+                activeFormSignUp.Close();
+                activeFormSignUp = null;
+            }
+        }
+
+        private void button_karaoke_Click(object sender, EventArgs e)
+        {
+            if (panel_karaoke.Visible == false)
+            {
+                panel_karaoke.Visible = true;
+            }
+            else
+            {
+                panel_karaoke.Visible = false;
+            }
+        }
+
+        private void button_recording_Click(object sender, EventArgs e)
+        {
+            Form karaoke = new Karaoke();
+            openChildForm(karaoke,true);
+        }
+
+        private void button_recorded_Click(object sender, EventArgs e)
+        {
+            Form recorded = new Recorded();
+            openChildForm(recorded);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+            songNameKaraoke = label_nameSong.Text + " karaoke";
+
+            Form karaoke = new Karaoke();
+            openChildForm(karaoke, true);
         }
     }
 }

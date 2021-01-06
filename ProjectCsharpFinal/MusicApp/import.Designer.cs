@@ -31,8 +31,9 @@
             this.label_importPC = new System.Windows.Forms.Label();
             this.button_addPC = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label_title = new System.Windows.Forms.Label();
+            this.button_download = new System.Windows.Forms.Button();
+            this.richTextBox_urlDownload = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label_importPC
@@ -57,7 +58,7 @@
             this.button_addPC.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button_addPC.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_addPC.ForeColor = System.Drawing.Color.White;
-            this.button_addPC.Location = new System.Drawing.Point(515, 119);
+            this.button_addPC.Location = new System.Drawing.Point(525, 119);
             this.button_addPC.Name = "button_addPC";
             this.button_addPC.Size = new System.Drawing.Size(169, 46);
             this.button_addPC.TabIndex = 4;
@@ -79,16 +80,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Tải nhạc từ url :";
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(213, 218);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(481, 46);
-            this.textBox1.TabIndex = 6;
-            // 
             // label_title
             // 
             this.label_title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -103,14 +94,39 @@
             this.label_title.TabIndex = 7;
             this.label_title.Text = "Thêm nhạc vào phần mền";
             // 
+            // button_download
+            // 
+            this.button_download.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_download.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
+            this.button_download.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button_download.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_download.ForeColor = System.Drawing.Color.White;
+            this.button_download.Location = new System.Drawing.Point(525, 315);
+            this.button_download.Name = "button_download";
+            this.button_download.Size = new System.Drawing.Size(169, 46);
+            this.button_download.TabIndex = 8;
+            this.button_download.TabStop = false;
+            this.button_download.Text = "Tải xuống";
+            this.button_download.UseVisualStyleBackColor = false;
+            this.button_download.Click += new System.EventHandler(this.button_download_Click);
+            // 
+            // richTextBox_urlDownload
+            // 
+            this.richTextBox_urlDownload.Location = new System.Drawing.Point(213, 220);
+            this.richTextBox_urlDownload.Name = "richTextBox_urlDownload";
+            this.richTextBox_urlDownload.Size = new System.Drawing.Size(481, 34);
+            this.richTextBox_urlDownload.TabIndex = 9;
+            this.richTextBox_urlDownload.Text = "";
+            // 
             // import
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(38)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(803, 732);
+            this.Controls.Add(this.richTextBox_urlDownload);
+            this.Controls.Add(this.button_download);
             this.Controls.Add(this.label_title);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_addPC);
             this.Controls.Add(this.label_importPC);
@@ -127,7 +143,8 @@
         private System.Windows.Forms.Label label_importPC;
         private System.Windows.Forms.Button button_addPC;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.Button button_download;
+        private System.Windows.Forms.RichTextBox richTextBox_urlDownload;
     }
 }
