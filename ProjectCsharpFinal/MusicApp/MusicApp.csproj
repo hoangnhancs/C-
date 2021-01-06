@@ -61,10 +61,7 @@
     <Compile Include="DAO\albumDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\playlistDAO.cs" />
-<<<<<<< HEAD
     <Compile Include="DAO\singerDAO.cs" />
-=======
->>>>>>> d60705bbee92b35a32eb48fe55ef61378c42beef
     <Compile Include="DAO\songDAO.cs" />
     <Compile Include="discover_album.cs">
       <SubType>Form</SubType>

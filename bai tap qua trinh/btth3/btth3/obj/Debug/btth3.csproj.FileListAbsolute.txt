@@ -14,3 +14,19 @@ E:\CSharp\btth3\btth3\bin\Debug\AxInterop.WMPLib.dll
 E:\CSharp\btth3\btth3\obj\Debug\Interop.WMPLib.dll
 E:\CSharp\btth3\btth3\obj\Debug\AxInterop.WMPLib.dll
 E:\CSharp\btth3\btth3\obj\Debug\btth3.csproj.ResolveComReference.cache
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\bin\Debug\btth3.exe.config
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\bin\Debug\btth3.exe
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\bin\Debug\btth3.pdb
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\bin\Debug\Interop.WMPLib.dll
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\bin\Debug\AxInterop.WMPLib.dll
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.csprojAssemblyReference.cache
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\Interop.WMPLib.dll
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\AxInterop.WMPLib.dll
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.csproj.ResolveComReference.cache
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.Form1.resources
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.formplaylist.resources
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.Properties.Resources.resources
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.csproj.GenerateResource.cache
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.csproj.CoreCompileInputs.cache
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.exe
+E:\hoangnhancs\C-\bai tap qua trinh\btth3\btth3\obj\Debug\btth3.pdb

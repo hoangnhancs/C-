@@ -71,12 +71,10 @@ namespace MusicApp
                 pn.Visible = false;
             }
 
-
-
-            string query = textBox_titleSong.Text;
+            //string query = textBox_titleSong.Text;
 
             List<song> lstsong = new List<song>();
-            lstsong = songDAO.Instance.getsongbyquery(query);
+            lstsong = songDAO.Instance.getsongbyquery(textBox_titleSong.Text);
 
             //panel_item1.Visible = true;
             //panel_item2.Visible = true;
@@ -105,7 +103,8 @@ namespace MusicApp
         {
             
             string query = textBox_titleSong.Text;
-            if (search == 1)
+
+            if (search == 1 && query!="")
             {
                 check = "song";
                 showsongbyquery(query);
@@ -150,7 +149,7 @@ namespace MusicApp
         {
 
             string query = textBox_titleSong.Text;
-            if (search == 1)
+            if (search == 1 && query!="")
             {
                 showalbumbyquery(query);
                 check = "album";
@@ -193,6 +192,11 @@ namespace MusicApp
                 }
 
             }
+
+        }
+
+        private void panel_search_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

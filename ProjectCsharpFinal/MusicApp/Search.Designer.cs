@@ -97,6 +97,7 @@
             this.panel_search.Name = "panel_search";
             this.panel_search.Size = new System.Drawing.Size(803, 68);
             this.panel_search.TabIndex = 0;
+            this.panel_search.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_search_Paint);
             // 
             // button_searchSong
             // 
@@ -470,9 +471,7 @@
             this.button_album.TabIndex = 6;
             this.button_album.Text = "Album";
             this.button_album.UseVisualStyleBackColor = false;
-
             this.button_album.Click += new System.EventHandler(this.button_album_Click);
-
             // 
             // button_song
             // 
@@ -486,9 +485,7 @@
             this.button_song.TabIndex = 5;
             this.button_song.Text = "Bài hát";
             this.button_song.UseVisualStyleBackColor = false;
-
             this.button_song.Click += new System.EventHandler(this.button_song_Click);
-
             // 
             // button_all
             // 
@@ -502,9 +499,7 @@
             this.button_all.TabIndex = 4;
             this.button_all.Text = "Tất cả";
             this.button_all.UseVisualStyleBackColor = false;
-
             this.button_all.Click += new System.EventHandler(this.button_all_Click);
-
             // 
             // panel1
             // 

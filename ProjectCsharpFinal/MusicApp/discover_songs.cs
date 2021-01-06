@@ -45,5 +45,30 @@ namespace MusicApp
         {
 
         }
+
+        private void panel_behindList1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox_item1.Visible = true;
+        }
+
+        private void panel_behindList1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox_item1.Visible = false;
+        }
+
+        private void pictureBox_item1_MouseHover(object sender, EventArgs e)
+        {
+            pictureBox_item1.Visible = true;
+        }
+
+        private void pictureBox_item1_MouseLeave(object sender, EventArgs e)
+        {
+            //pictureBox_item1.Visible = false;
+        }
+
+        private void pictureBox_item1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

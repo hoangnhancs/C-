@@ -63,7 +63,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel_behindList1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_item1 = new System.Windows.Forms.PictureBox();
             this.panel_menuBar.SuspendLayout();
             this.panel_main.SuspendLayout();
             this.panel_title.SuspendLayout();
@@ -92,7 +92,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_behindList1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_item1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_menuBar
@@ -457,22 +457,28 @@
             // 
             this.panel_behindList1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_behindList1.BackgroundImage")));
             this.panel_behindList1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_behindList1.Controls.Add(this.pictureBox1);
+            this.panel_behindList1.Controls.Add(this.pictureBox_item1);
             this.panel_behindList1.Location = new System.Drawing.Point(36, 59);
             this.panel_behindList1.Name = "panel_behindList1";
             this.panel_behindList1.Size = new System.Drawing.Size(222, 206);
             this.panel_behindList1.TabIndex = 0;
             this.panel_behindList1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_behindList1_Paint);
+            this.panel_behindList1.MouseLeave += new System.EventHandler(this.panel_behindList1_MouseLeave);
+            this.panel_behindList1.MouseHover += new System.EventHandler(this.panel_behindList1_MouseHover);
             // 
-            // pictureBox1
+            // pictureBox_item1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(87, 81);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 45);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_item1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_item1.Image")));
+            this.pictureBox_item1.Location = new System.Drawing.Point(87, 81);
+            this.pictureBox_item1.Name = "pictureBox_item1";
+            this.pictureBox_item1.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox_item1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_item1.TabIndex = 7;
+            this.pictureBox_item1.TabStop = false;
+            this.pictureBox_item1.Visible = false;
+            this.pictureBox_item1.Click += new System.EventHandler(this.pictureBox_item1_Click);
+            this.pictureBox_item1.MouseLeave += new System.EventHandler(this.pictureBox_item1_MouseLeave);
+            this.pictureBox_item1.MouseHover += new System.EventHandler(this.pictureBox_item1_MouseHover);
             // 
             // discover_songs
             // 
@@ -516,7 +522,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel_behindList1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_item1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,7 +542,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel_behindList1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox_item1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox7;

@@ -227,6 +227,7 @@
             this.panel_Home_2_1_2.Name = "panel_Home_2_1_2";
             this.panel_Home_2_1_2.Size = new System.Drawing.Size(239, 231);
             this.panel_Home_2_1_2.TabIndex = 0;
+            this.panel_Home_2_1_2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Home_2_1_2_Paint);
             this.panel_Home_2_1_2.MouseLeave += new System.EventHandler(this.panel_Home_2_1_2_MouseLeave);
             // 
             // btn_Home_2_1

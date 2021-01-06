@@ -91,10 +91,6 @@ E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.csproj.CoreComp
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.exe
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\MusicApp.pdb
 >>>>>>> 9bde17f8818dbec624f1595529df2adc3116d3b3
-E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Newtonsoft.Json.dll
-E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\taglib-sharp.dll
-E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YoutubeExtractor.dll
-E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YouTubeSearch.dll
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Newtonsoft.Json.xml
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\YoutubeExtractor.xml
 E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Interop.ShockwaveFlashObjects.dll
@@ -113,3 +109,7 @@ D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Interop.WMPLib.d
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\bin\Debug\AxInterop.WMPLib.dll
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\Interop.WMPLib.dll
 D:\University\Nam3_Ky1\C-\ProjectCsharpFinal\MusicApp\obj\Debug\AxInterop.WMPLib.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\Interop.WMPLib.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\obj\Debug\AxInterop.WMPLib.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\Interop.WMPLib.dll
+E:\hoangnhancs\C-\ProjectCsharpFinal\MusicApp\bin\Debug\AxInterop.WMPLib.dll

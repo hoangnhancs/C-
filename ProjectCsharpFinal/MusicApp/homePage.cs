@@ -15,7 +15,8 @@ namespace MusicApp
 {
     public partial class homePage : Form
     {
-
+        //MusicApp f = new MusicApp();
+        public Label label1;
         string Dirpath;
 
         int imgindex;
@@ -23,6 +24,7 @@ namespace MusicApp
         public homePage()
         {
             InitializeComponent();
+
         }
 
         private void panel_main_Paint(object sender, PaintEventArgs e)
@@ -327,12 +329,32 @@ namespace MusicApp
         {
 
         }
-        public static string SongNowPlaying;
+        //private string songplaying = LinkStat
+        /*
+        public string _songplaying
+        {
+            get { return label_Home_2_1.Text; }
+            
+        }
+        */
+        public string text;
         private void btn_Home_2_1_Click(object sender, EventArgs e)
         {
-            SongNowPlaying = lstSongNhactre[0].Name;
+
+            //MusicApp ms = new MusicApp();
+            //ms.songplaying = _songplaying;
+            //ms.Show();
+
+            //this.text = label_Home_2_1.Text;
+            //MusicApp parent = (MusicApp) Owner;
+            //parent.reload(label_Home_2_1.Text);
             
-            //Console.WriteLine(SongNowPlaying);
+
+        }
+
+        private void panel_Home_2_1_2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
