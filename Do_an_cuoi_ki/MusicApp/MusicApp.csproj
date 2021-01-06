@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98A5CB47-D836-44B9-9C3D-0DE226F31D90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MusicApp</RootNamespace>
+    <AssemblyName>MusicApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="discover_album.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discover_album.Designer.cs">
+      <DependentUpon>discover_album.cs</DependentUpon>
+    </Compile>
+    <Compile Include="discover_playlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discover_playlist.Designer.cs">
+      <DependentUpon>discover_playlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="discover_singer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discover_singer.Designer.cs">
+      <DependentUpon>discover_singer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="discover_songs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discover_songs.Designer.cs">
+      <DependentUpon>discover_songs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="import.Designer.cs">
+      <DependentUpon>import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Song.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Song.Designer.cs">
+      <DependentUpon>Song.cs</DependentUpon>
+    </Compile>
+    <Compile Include="static_class\openChildFrom.cs" />
+    <EmbeddedResource Include="discover_album.resx">
+      <DependentUpon>discover_album.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="discover_playlist.resx">
+      <DependentUpon>discover_playlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="discover_singer.resx">
+      <DependentUpon>discover_singer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="discover_songs.resx">
+      <DependentUpon>discover_songs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="import.resx">
+      <DependentUpon>import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Song.resx">
+      <DependentUpon>Song.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Phat_Hanh\neumainayxoanhau.jpg" />
+    <Content Include="Phat_Hanh\sleep.jpg" />
+    <None Include="Resources\Bandidon.jpg" />
+    <None Include="Resources\Tim-Kiem.png" />
+    <None Include="Resources\sleep.jpg" />
+    <None Include="Resources\neumainayxoanhau.jpg" />
+    <None Include="Resources\Play1.png" />
+    <None Include="Resources\ty_view.jpg" />
+    <None Include="Resources\TopHit.jpg" />
+    <None Include="Resources\Khongthenoiyen.jpg" />
+    <None Include="Resources\hot_c_pop.jpg" />
+    <None Include="Resources\Hit_rewind.jpg" />
+    <None Include="Resources\C-Pop.jpg" />
+    <None Include="Resources\best_C-pop.jpg" />
+    <None Include="Resources\Prev.png" />
+    <None Include="Resources\Next1.png" />
+    <None Include="Resources\icon-right.png" />
+    <None Include="Resources\Next.png" />
+    <None Include="Resources\confetti.jpg" />
+    <None Include="Resources\Dieutuyetvoinhat.jpg" />
+    <None Include="Resources\Good_newa.jpg" />
+    <None Include="Resources\only-child.jpg" />
+    <None Include="Resources\Den-vau.jpg" />
+    <None Include="Resources\chude_muadong.png" />
+    <None Include="Resources\rapviet.png" />
+    <None Include="Resources\Taptrungtuduy.png" />
+    <None Include="Resources\play2.png" />
+    <Content Include="Sile_Show\1.jpg" />
+    <Content Include="Sile_Show\2.jpg" />
+    <Content Include="Sile_Show\3.jpg" />
+    <Content Include="Sile_Show\4.jpg" />
+    <Content Include="Sile_Show\5.jpg" />
+    <Content Include="Sile_Show\6.jpg" />
+    <Content Include="Sile_Show\7.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
