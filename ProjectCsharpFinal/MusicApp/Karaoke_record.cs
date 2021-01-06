@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace MusicApp
 {
@@ -43,10 +44,11 @@ namespace MusicApp
         {
             countTime.Stop();
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.InitialDirectory = @"C:\Users\thang\Music";
+            saveFileDialog1.InitialDirectory = @"E:\hoangnhancs\C-\Recorded";
             saveFileDialog1.Filter = "MP3|*.mp3|WAV|*.wav";
             saveFileDialog1.Title = "Lưu file ghi âm";
             saveFileDialog1.ShowDialog();
+            
 
             if (saveFileDialog1.FileName != "")
             {
@@ -56,6 +58,15 @@ namespace MusicApp
                 time = 0;
                 label_timeRecording.Text = "00:00 Giây";
                 button_stopRecord.Enabled = false;
+                string[] items = saveFileDialog1.FileName.Split('\\');
+                string query = @"insert into dbo.record(name, record_path, record_img_path) values (N'"+items[items.Length-1].Split('.')[0]+"', N'"+saveFileDialog1.FileName+"', N'blabla')";
+                string connectionSTR = @"Data Source=DESKTOP-SVOS4R1\SQLEXPRESSSSS;Initial Catalog=nghegihomnay;Integrated Security=True";
+                SqlConnection connection = new SqlConnection(connectionSTR);
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+
             }
             else
             {
