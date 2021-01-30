@@ -1,0 +1,5 @@
+khi đang ở chế độ shuffle, nếu thêm bài hát r tắt shuffle đi thì mấy bài hát đã thêm bị mất -- fixed
+khi tìm kiếm xong, nhấn play thì playlist k bị mất -- fixed
+giới hạn label trong disscover_song -- fixed
+k cập nhật vị trí khi shuffle --fixed
+trong form search add playlist bị sai
