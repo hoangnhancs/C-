@@ -1,0 +1,21 @@
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\bin\Debug\BaiTH1.exe.config
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\bin\Debug\BaiTH1.exe
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\bin\Debug\BaiTH1.pdb
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\obj\Debug\BaiTH1.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\obj\Debug\BaiTH1.BookTickets.resources
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\obj\Debug\BaiTH1.Properties.Resources.resources
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\obj\Debug\BaiTH1.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\obj\Debug\BaiTH1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\obj\Debug\BaiTH1.exe
+C:\Users\Administrator\source\repos\BaiTH1\BaiTH1\obj\Debug\BaiTH1.pdb
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\bin\Debug\BaiTH1.exe.config
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\bin\Debug\BaiTH1.exe
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\bin\Debug\BaiTH1.pdb
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.csprojAssemblyReference.cache
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.BookTickets.resources
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.Properties.Resources.resources
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.csproj.GenerateResource.cache
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.csproj.CoreCompileInputs.cache
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.exe
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.pdb
+C:\Users\thang\OneDrive\Máy tính\1111\BaiTH1\BaiTH1\obj\Debug\BaiTH1.seatsMap.resources
